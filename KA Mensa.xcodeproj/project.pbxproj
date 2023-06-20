@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7071FE122A417A0F001C524D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE112A417A0F001C524D /* AppDelegate.swift */; };
+		7071FE142A417A0F001C524D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE132A417A0F001C524D /* SceneDelegate.swift */; };
+		7071FE162A417A0F001C524D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE152A417A0F001C524D /* ViewController.swift */; };
+		7071FE192A417A0F001C524D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7071FE172A417A0F001C524D /* Main.storyboard */; };
+		7071FE1B2A417A12001C524D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7071FE1A2A417A12001C524D /* Assets.xcassets */; };
+		7071FE1E2A417A12001C524D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7071FE1C2A417A12001C524D /* LaunchScreen.storyboard */; };
+		7071FE292A417A12001C524D /* KA_MensaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE282A417A12001C524D /* KA_MensaTests.swift */; };
+		7071FE332A417A12001C524D /* KA_MensaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE322A417A12001C524D /* KA_MensaUITests.swift */; };
+		7071FE352A417A12001C524D /* KA_MensaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE342A417A12001C524D /* KA_MensaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7071FE252A417A12001C524D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7071FE062A417A0F001C524D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7071FE0D2A417A0F001C524D;
+			remoteInfo = "KA Mensa";
+		};
+		7071FE2F2A417A12001C524D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7071FE062A417A0F001C524D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7071FE0D2A417A0F001C524D;
+			remoteInfo = "KA Mensa";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7071FE0E2A417A0F001C524D /* KA Mensa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KA Mensa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7071FE112A417A0F001C524D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7071FE132A417A0F001C524D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7071FE152A417A0F001C524D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7071FE182A417A0F001C524D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7071FE1A2A417A12001C524D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7071FE1D2A417A12001C524D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7071FE1F2A417A12001C524D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7071FE242A417A12001C524D /* KA MensaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KA MensaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7071FE282A417A12001C524D /* KA_MensaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KA_MensaTests.swift; sourceTree = "<group>"; };
+		7071FE2E2A417A12001C524D /* KA MensaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KA MensaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7071FE322A417A12001C524D /* KA_MensaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KA_MensaUITests.swift; sourceTree = "<group>"; };
+		7071FE342A417A12001C524D /* KA_MensaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KA_MensaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7071FE0B2A417A0F001C524D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7071FE212A417A12001C524D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7071FE2B2A417A12001C524D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7071FE052A417A0F001C524D = {
+			isa = PBXGroup;
+			children = (
+				7071FE102A417A0F001C524D /* KA Mensa */,
+				7071FE272A417A12001C524D /* KA MensaTests */,
+				7071FE312A417A12001C524D /* KA MensaUITests */,
+				7071FE0F2A417A0F001C524D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7071FE0F2A417A0F001C524D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7071FE0E2A417A0F001C524D /* KA Mensa.app */,
+				7071FE242A417A12001C524D /* KA MensaTests.xctest */,
+				7071FE2E2A417A12001C524D /* KA MensaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7071FE102A417A0F001C524D /* KA Mensa */ = {
+			isa = PBXGroup;
+			children = (
+				7071FE112A417A0F001C524D /* AppDelegate.swift */,
+				7071FE132A417A0F001C524D /* SceneDelegate.swift */,
+				7071FE152A417A0F001C524D /* ViewController.swift */,
+				7071FE172A417A0F001C524D /* Main.storyboard */,
+				7071FE1A2A417A12001C524D /* Assets.xcassets */,
+				7071FE1C2A417A12001C524D /* LaunchScreen.storyboard */,
+				7071FE1F2A417A12001C524D /* Info.plist */,
+			);
+			path = "KA Mensa";
+			sourceTree = "<group>";
+		};
+		7071FE272A417A12001C524D /* KA MensaTests */ = {
+			isa = PBXGroup;
+			children = (
+				7071FE282A417A12001C524D /* KA_MensaTests.swift */,
+			);
+			path = "KA MensaTests";
+			sourceTree = "<group>";
+		};
+		7071FE312A417A12001C524D /* KA MensaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7071FE322A417A12001C524D /* KA_MensaUITests.swift */,
+				7071FE342A417A12001C524D /* KA_MensaUITestsLaunchTests.swift */,
+			);
+			path = "KA MensaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7071FE0D2A417A0F001C524D /* KA Mensa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7071FE382A417A12001C524D /* Build configuration list for PBXNativeTarget "KA Mensa" */;
+			buildPhases = (
+				7071FE0A2A417A0F001C524D /* Sources */,
+				7071FE0B2A417A0F001C524D /* Frameworks */,
+				7071FE0C2A417A0F001C524D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KA Mensa";
+			productName = "KA Mensa";
+			productReference = 7071FE0E2A417A0F001C524D /* KA Mensa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7071FE232A417A12001C524D /* KA MensaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7071FE3B2A417A12001C524D /* Build configuration list for PBXNativeTarget "KA MensaTests" */;
+			buildPhases = (
+				7071FE202A417A12001C524D /* Sources */,
+				7071FE212A417A12001C524D /* Frameworks */,
+				7071FE222A417A12001C524D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7071FE262A417A12001C524D /* PBXTargetDependency */,
+			);
+			name = "KA MensaTests";
+			productName = "KA MensaTests";
+			productReference = 7071FE242A417A12001C524D /* KA MensaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7071FE2D2A417A12001C524D /* KA MensaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7071FE3E2A417A12001C524D /* Build configuration list for PBXNativeTarget "KA MensaUITests" */;
+			buildPhases = (
+				7071FE2A2A417A12001C524D /* Sources */,
+				7071FE2B2A417A12001C524D /* Frameworks */,
+				7071FE2C2A417A12001C524D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7071FE302A417A12001C524D /* PBXTargetDependency */,
+			);
+			name = "KA MensaUITests";
+			productName = "KA MensaUITests";
+			productReference = 7071FE2E2A417A12001C524D /* KA MensaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7071FE062A417A0F001C524D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					7071FE0D2A417A0F001C524D = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					7071FE232A417A12001C524D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 7071FE0D2A417A0F001C524D;
+					};
+					7071FE2D2A417A12001C524D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 7071FE0D2A417A0F001C524D;
+					};
+				};
+			};
+			buildConfigurationList = 7071FE092A417A0F001C524D /* Build configuration list for PBXProject "KA Mensa" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7071FE052A417A0F001C524D;
+			productRefGroup = 7071FE0F2A417A0F001C524D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7071FE0D2A417A0F001C524D /* KA Mensa */,
+				7071FE232A417A12001C524D /* KA MensaTests */,
+				7071FE2D2A417A12001C524D /* KA MensaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7071FE0C2A417A0F001C524D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7071FE1E2A417A12001C524D /* LaunchScreen.storyboard in Resources */,
+				7071FE1B2A417A12001C524D /* Assets.xcassets in Resources */,
+				7071FE192A417A0F001C524D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7071FE222A417A12001C524D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7071FE2C2A417A12001C524D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7071FE0A2A417A0F001C524D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7071FE162A417A0F001C524D /* ViewController.swift in Sources */,
+				7071FE122A417A0F001C524D /* AppDelegate.swift in Sources */,
+				7071FE142A417A0F001C524D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7071FE202A417A12001C524D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7071FE292A417A12001C524D /* KA_MensaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7071FE2A2A417A12001C524D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7071FE352A417A12001C524D /* KA_MensaUITestsLaunchTests.swift in Sources */,
+				7071FE332A417A12001C524D /* KA_MensaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7071FE262A417A12001C524D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7071FE0D2A417A0F001C524D /* KA Mensa */;
+			targetProxy = 7071FE252A417A12001C524D /* PBXContainerItemProxy */;
+		};
+		7071FE302A417A12001C524D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7071FE0D2A417A0F001C524D /* KA Mensa */;
+			targetProxy = 7071FE2F2A417A12001C524D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7071FE172A417A0F001C524D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7071FE182A417A0F001C524D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7071FE1C2A417A12001C524D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7071FE1D2A417A12001C524D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7071FE362A417A12001C524D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7071FE372A417A12001C524D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7071FE392A417A12001C524D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PFNAA7QQ4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KA Mensa/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cameloper.KA-Mensa";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7071FE3A2A417A12001C524D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PFNAA7QQ4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KA Mensa/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cameloper.KA-Mensa";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7071FE3C2A417A12001C524D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PFNAA7QQ4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cameloper.KA-MensaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KA Mensa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KA Mensa";
+			};
+			name = Debug;
+		};
+		7071FE3D2A417A12001C524D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PFNAA7QQ4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cameloper.KA-MensaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KA Mensa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KA Mensa";
+			};
+			name = Release;
+		};
+		7071FE3F2A417A12001C524D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PFNAA7QQ4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cameloper.KA-MensaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "KA Mensa";
+			};
+			name = Debug;
+		};
+		7071FE402A417A12001C524D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PFNAA7QQ4N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cameloper.KA-MensaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "KA Mensa";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7071FE092A417A0F001C524D /* Build configuration list for PBXProject "KA Mensa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7071FE362A417A12001C524D /* Debug */,
+				7071FE372A417A12001C524D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7071FE382A417A12001C524D /* Build configuration list for PBXNativeTarget "KA Mensa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7071FE392A417A12001C524D /* Debug */,
+				7071FE3A2A417A12001C524D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7071FE3B2A417A12001C524D /* Build configuration list for PBXNativeTarget "KA MensaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7071FE3C2A417A12001C524D /* Debug */,
+				7071FE3D2A417A12001C524D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7071FE3E2A417A12001C524D /* Build configuration list for PBXNativeTarget "KA MensaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7071FE3F2A417A12001C524D /* Debug */,
+				7071FE402A417A12001C524D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7071FE062A417A0F001C524D /* Project object */;
+}
