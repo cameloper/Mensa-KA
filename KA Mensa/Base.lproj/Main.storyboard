@@ -94,11 +94,7 @@
                             <outlet property="delegate" destination="d4h-jO-kpd" id="iEv-4S-ETG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Mensa Name" id="P7T-x2-v77">
-                        <barButtonItem key="rightBarButtonItem" title="Settings" image="slider.horizontal.3" catalog="system" style="plain" id="hAA-IH-wQu">
-                            <color key="tintColor" systemColor="labelColor"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Mensa Name" id="P7T-x2-v77"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ixz-dK-UBL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -123,12 +119,8 @@
     </scenes>
     <resources>
         <image name="regionales-schweinefleisch" width="31.943181991577148" height="31.977272033691406"/>
-        <image name="slider.horizontal.3" catalog="system" width="128" height="99"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
