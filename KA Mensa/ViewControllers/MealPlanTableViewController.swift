@@ -22,7 +22,7 @@ class MealPlanTableViewController: UITableViewController, SettingsDelegate {
     }
     
     func getMealPlan() {
-        mealPlanManager.getNonEmptyLinePlans(forMensa: mensa, forDate: date) { dayPlan in
+        mealPlanManager.getNonEmptyLinePlans(forMensa: mensa, forDate: date) { dayPlan, error in
             self.dayPlan = dayPlan
             DispatchQueue.main.async {
                 self.tableView.reloadData()

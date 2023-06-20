@@ -27,6 +27,7 @@
 		709E06A52A41D7E300081817 /* LinePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709E06A42A41D7E300081817 /* LinePlan.swift */; };
 		70F758332A4200AB002B5CBE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F758322A4200AB002B5CBE /* SettingsViewController.swift */; };
 		70F758352A421119002B5CBE /* MealPlanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F758342A421119002B5CBE /* MealPlanManager.swift */; };
+		70F758372A421917002B5CBE /* MealPlanError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F758362A421917002B5CBE /* MealPlanError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		709E06A42A41D7E300081817 /* LinePlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinePlan.swift; sourceTree = "<group>"; };
 		70F758322A4200AB002B5CBE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		70F758342A421119002B5CBE /* MealPlanManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanManager.swift; sourceTree = "<group>"; };
+		70F758362A421917002B5CBE /* MealPlanError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			children = (
 				7071FE532A417A98001C524D /* MealPlanDownloader.swift */,
 				70F758342A421119002B5CBE /* MealPlanManager.swift */,
+				70F758362A421917002B5CBE /* MealPlanError.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			files = (
 				709E06A52A41D7E300081817 /* LinePlan.swift in Sources */,
 				7071FE5B2A417F3D001C524D /* MealTableViewCell.swift in Sources */,
+				70F758372A421917002B5CBE /* MealPlanError.swift in Sources */,
 				7071FE4F2A417A5F001C524D /* Tag.swift in Sources */,
 				7071FE552A417A98001C524D /* MealPlanDownloader.swift in Sources */,
 				7071FE4E2A417A5F001C524D /* Mensa.swift in Sources */,

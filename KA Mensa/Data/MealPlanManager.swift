@@ -7,22 +7,22 @@
 
 import Foundation
 
-typealias GetMealPlanCompletion = (_ data: [LinePlan]) -> Void
+typealias MealPlanManagerCompletion<T> = (_ data: T?, _ error: Error?) -> Void
 class MealPlanManager {
     private var downloadedMealPlans = [CWPlan]()
     
-    func getNonEmptyLinePlans(forMensa mensa: Mensa, forDate date: Date, completion: @escaping GetMealPlanCompletion) {
-        self.getMealPlan(forMensa: mensa, forDate: date) { dayPlan in
-                completion(dayPlan.filter { !$0.meals.isEmpty })
+    func getNonEmptyLinePlans(forMensa mensa: Mensa, forDate date: Date, completion: @escaping MealPlanManagerCompletion<[LinePlan]>) {
+        self.getMealPlan(forMensa: mensa, forDate: date) { dayPlan, error in
+            completion(dayPlan!.filter { !$0.meals.isEmpty }, error)
         }
     }
     
-    func getMealPlan(forMensa mensa: Mensa, forDate date: Date, completion: @escaping GetMealPlanCompletion) {
+    private func getMealPlan(forMensa mensa: Mensa, forDate date: Date, completion: @escaping MealPlanManagerCompletion<[LinePlan]>) {
         let calendarWeek = date.calendarWeek
         
         if let cwPlan = getDownloadedMealPlan(forMensa: mensa, forCalendarWeek: calendarWeek),
            let dayPlan = cwPlan.days[date.dayId] {
-            completion(dayPlan)
+            completion(dayPlan, nil)
             return
         }
         
@@ -31,10 +31,14 @@ class MealPlanManager {
             if let cwPlan = data {
                 self.downloadedMealPlans.append(cwPlan)
                 if let dayPlan = cwPlan.days[date.dayId] {
-                    completion(dayPlan)
+                    completion(dayPlan, nil)
                 }
             }
         }
+    }
+    
+    private func downloadMealPlan(forMensa mensa: Mensa, forCalendarWeek calendarWeek: Int) {
+        
     }
     
     private func getDownloadedMealPlan(forMensa mensa: Mensa, forCalendarWeek calendarWeek: Int) -> CWPlan? {
