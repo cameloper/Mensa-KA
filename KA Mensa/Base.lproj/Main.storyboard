@@ -128,7 +128,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stW-IM-Exy">
-                                <rect key="frame" x="0.0" y="81" width="375" height="216"/>
+                                <rect key="frame" x="0.0" y="80.5" width="375" height="216"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Selection:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1J-mT-PZ0">
                                 <rect key="frame" x="16" y="312.5" width="121" height="21"/>
@@ -136,8 +136,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="luM-4K-upK">
-                                <rect key="frame" x="0.0" y="346" width="375" height="36"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="luM-4K-upK">
+                                <rect key="frame" x="0.0" y="345.5" width="375" height="34.5"/>
                                 <connections>
                                     <action selector="datePickerDidChange:" destination="T50-BP-4Ut" eventType="valueChanged" id="Zhd-c0-JQa"/>
                                 </connections>
@@ -147,13 +147,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="luM-4K-upK" firstAttribute="top" secondItem="o1J-mT-PZ0" secondAttribute="bottom" constant="12" id="74Y-Ie-aCu"/>
-                            <constraint firstAttribute="trailing" secondItem="luM-4K-upK" secondAttribute="trailing" id="HHE-UY-m5I"/>
                             <constraint firstItem="stW-IM-Exy" firstAttribute="leading" secondItem="hAy-VC-oBu" secondAttribute="leading" id="K2w-pg-Cch"/>
+                            <constraint firstItem="luM-4K-upK" firstAttribute="trailing" secondItem="hAy-VC-oBu" secondAttribute="trailing" id="X1a-Fe-aS1"/>
                             <constraint firstItem="Eyy-9U-s3B" firstAttribute="leading" secondItem="hAy-VC-oBu" secondAttribute="leading" constant="16" id="YSi-fO-81f"/>
                             <constraint firstItem="stW-IM-Exy" firstAttribute="trailing" secondItem="hAy-VC-oBu" secondAttribute="trailing" id="ZgW-JV-MuO"/>
                             <constraint firstItem="o1J-mT-PZ0" firstAttribute="top" secondItem="stW-IM-Exy" secondAttribute="bottom" constant="16" id="eaN-RC-ucF"/>
                             <constraint firstItem="Eyy-9U-s3B" firstAttribute="top" secondItem="hAy-VC-oBu" secondAttribute="top" constant="48" id="jJJ-XW-qbq"/>
-                            <constraint firstItem="luM-4K-upK" firstAttribute="leading" secondItem="jrp-J3-Ri8" secondAttribute="leading" id="jKJ-MP-bzY"/>
+                            <constraint firstItem="luM-4K-upK" firstAttribute="leading" secondItem="hAy-VC-oBu" secondAttribute="leading" id="jKJ-MP-bzY"/>
                             <constraint firstItem="o1J-mT-PZ0" firstAttribute="leading" secondItem="hAy-VC-oBu" secondAttribute="leading" constant="16" id="r6C-tj-wen"/>
                             <constraint firstItem="stW-IM-Exy" firstAttribute="top" secondItem="Eyy-9U-s3B" secondAttribute="bottom" constant="12" id="w3T-Vh-RNh"/>
                         </constraints>
