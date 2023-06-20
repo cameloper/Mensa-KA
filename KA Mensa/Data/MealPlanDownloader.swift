@@ -155,6 +155,14 @@ class MealPlanDownloader {
             
         }
         
-        return Meal(name: name, tags: tags, prices: prices)
+        var envScore: Meal.EnvScore? = nil
+        if let envScoreElement = try priceEnvSection.getElementsByClass("enviroment_score").first() {
+            let envScoreString = try envScoreElement.attr("data-rating")
+            if let envScoreInt = Int(envScoreString) {
+                envScore = Meal.EnvScore(rawValue: envScoreInt)
+            }
+        }
+        
+        return Meal(name: name, tags: tags, prices: prices, envScore: envScore)
     }
 }

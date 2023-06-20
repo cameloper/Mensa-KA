@@ -15,14 +15,23 @@ class Meal: Codable {
         case pupil = "price_4"
     }
     
+    enum EnvScore: Int, Codable {
+        case none
+        case oneStar
+        case twoStars
+        case threeStars
+    }
+    
     let name: String
     let tags: [Tag]
     let prices: [PriceCategory: Double]
+    let envScore: EnvScore?
     
-    init(name: String, tags: [Tag], prices: [PriceCategory : Double]) {
+    init(name: String, tags: [Tag], prices: [PriceCategory : Double], envScore: EnvScore?) {
         self.name = name
         self.tags = tags
         self.prices = prices
+        self.envScore = envScore
     }
     
     var imageName: String? {
