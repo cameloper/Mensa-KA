@@ -9,37 +9,45 @@ import Foundation
 import SwiftSoup
 
 class MealPlanDownloader {
-    typealias GetCWPlanCompletionHandler = ( _ data: CWPlan? ) -> Void
     private let endpoint = "https://www.sw-ka.de/de/hochschulgastronomie/speiseplan"
     private let entryDateFormatter = DateFormatter()
     
     let mensa: Mensa
-    let cw: Int
+    let calendarWeek: Int
     
-    init(mensa: Mensa, cw: Int) {
+    init(forMensa mensa: Mensa, forCalendarWeek calendarWeek: Int) {
         self.mensa = mensa
-        self.cw = cw
+        self.calendarWeek = calendarWeek
         entryDateFormatter.dateFormat = "yyyy-MM-dd"
     }
     
-    func getCWPlan(completion: @escaping GetCWPlanCompletionHandler) {
-        print("Getting meal plan for \(cw)")
+    func getCWPlan(completion: @escaping MealPlanManagerCompletion<CWPlan>) {
         guard let baseURL = URL(string: endpoint) else {
-            fatalError("Could not build url")
+            completion(nil, MealPlanError.urlRequestError)
+            return
         }
         
         var reqURL = baseURL.appending(path: mensa.rawValue)
         reqURL.append(queryItems: [
-            URLQueryItem(name: "kw", value: String(cw))
+            URLQueryItem(name: "kw", value: String(calendarWeek))
         ])
         
         let task = URLSession.shared.dataTask(with: reqURL) { data, response, error in
             if let data = data,
                let htmlString = String(bytes: data, encoding: .utf8) {
-                print("Received data! 🥳")
-                completion(self.parse(htmlString))
+                log.debug("Download successful for \(self.mensa) CW\(self.calendarWeek), parsing HTML...")
+                let cwPlan = self.parse(htmlString)
+                guard let dayCount = cwPlan?.days.count,
+                      dayCount > 0 else {
+                    completion(nil, MealPlanError.noDays)
+                    return
+                }
+                
+                log.info("Parsed meal plan of CW\(self.calendarWeek) with \(dayCount) days.")
+                completion(cwPlan, error)
             } else if let error = error {
-                fatalError("Could not download HTML: \(error)")
+                log.error(MealPlanError.downloadError(error))
+                completion(nil, error)
             }
         }
         
@@ -56,32 +64,30 @@ class MealPlanDownloader {
             for dayElement in dayElements {
                 let dayId = Int(dayElement.id().suffix(1))!
                 let entryDateString = try dayElement.parent()!.getElementById("canteen_day_nav_\(dayId)")!.attr("rel")
-                print("Parsing day plan for day \(dayId)")
-                if let dayPlan = try parseDay(dayElement) {
-                    dayPlans[entryDateString] = dayPlan
-                } else {
-                    print("Could not parse plan element for day \(dayId)")
-                }
+                log.debug("Parsing day plan for day \(dayId).")
+                
+                let dayPlan = try parseDay(dayElement)
+                dayPlans[entryDateString] = dayPlan
             }
+            return CWPlan(mensa: mensa, calendarWeek: calendarWeek, days: dayPlans)
             
-            return CWPlan(mensa: mensa, calendarWeek: cw, days: dayPlans)
         } catch let error {
-            print(error)
+            log.error(MealPlanError.parsingError(error))
+            return nil
         }
-        
-        return nil
-        
     }
     
-    func parseDay(_ element: Element) throws -> [LinePlan]? {
+    func parseDay(_ element: Element) throws -> [LinePlan] {
         var linePlans = [LinePlan]()
         let lineElements = try element.getElementsByClass("mensatype_rows")
         for lineElement in lineElements {
-            print("Parsing line plan")
+            let lineName = try lineElement.children().first()?.text()
+            log.debug("Parsing line plan \(lineName ?? "").")
+            
             if let linePlan = try parseLine(lineElement) {
                 linePlans.append(linePlan)
             } else {
-                print("Could not parse line plan element")
+                log.error("Could not parse element for line \(lineName ?? "")")
             }
         }
         
@@ -93,7 +99,7 @@ class MealPlanDownloader {
         let lineTitle = try element.getElementsByClass("mensatype").first()!.children().first()!.text()
         
         guard let mealDetailTableElement = try element.getElementsByClass("meal-detail-table").first()?.getElementsByTag("tbody").first() else {
-            print("Could not retrieve meal detail table for \(lineTitle)")
+            log.error("Could not retrieve meal detail table for \(lineTitle).")
             return nil
         }
         
@@ -102,11 +108,12 @@ class MealPlanDownloader {
         }
         
         for mealElement in mealElements {
-            print("Parsing meal \(try mealElement.className())")
+            let mealClassName = try mealElement.className()
+            log.debug("Parsing meal with class \(mealClassName)")
             if let meal = try parseMeal(mealElement) {
                 meals.append(meal)
             } else {
-                print("Could not parse meal element")
+                log.error("Could not parse element for meal with class \(mealClassName)")
             }
         }
         
@@ -114,6 +121,7 @@ class MealPlanDownloader {
     }
     
     func parseMeal(_ element: Element) throws -> Meal? {
+        let mealClassName = try element.className()
         var tags = [Tag]()
         var prices = [Meal.PriceCategory: Double]()
         
@@ -131,7 +139,7 @@ class MealPlanDownloader {
         
         let titleSection = dataSections[1]
         guard let name = try titleSection.getElementsByTag("span").first()?.text() else {
-            print("Could not get title. All meals should have a title!")
+            log.error("Could not get title for meal with class \(mealClassName). All meals should have a title!")
             return nil
         }
         

@@ -77,3 +77,34 @@ extension String {
         return String.numberFormatter.number(from: self)?.doubleValue
     }
 }
+
+struct Log {
+    private enum Level: String {
+        case debug
+        case error
+        case info
+        
+        var prefix: String {
+            return "[\(self.rawValue.uppercased())]"
+        }
+    }
+    
+    func debug(file: String = #file, line: Int = #line, function: String = #function, _ items: Any...) {
+        log(level: .debug, file: file, line: line, function: function, items)
+    }
+    
+    func error(file: String = #file, line: Int = #line, function: String = #function, _ items: Any...) {
+        log(level: .error, file: file, line: line, function: function, items)
+    }
+    
+    func info(file: String = #file, line: Int = #line, function: String = #function, _ items: Any...) {
+        log(level: .info, file: file, line: line, function: function, items)
+    }
+    
+    private func log(level: Level, file: String, line: Int, function: String, _ items: Any...) {
+        let fileName = file.split(separator: "/").last!
+        print("\(level.prefix) [\(fileName):\(line) \(function)] \(items)")
+    }
+}
+
+let log = Log()

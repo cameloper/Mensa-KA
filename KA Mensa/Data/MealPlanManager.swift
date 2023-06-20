@@ -13,7 +13,17 @@ class MealPlanManager {
     
     func getNonEmptyLinePlans(forMensa mensa: Mensa, forDate date: Date, completion: @escaping MealPlanManagerCompletion<[LinePlan]>) {
         self.getMealPlan(forMensa: mensa, forDate: date) { dayPlan, error in
-            completion(dayPlan!.filter { !$0.meals.isEmpty }, error)
+            guard let dayPlan = dayPlan else {
+                completion(nil, error)
+                return
+            }
+            
+            let openLines = dayPlan.filter { !$0.meals.isEmpty }
+            if openLines.isEmpty {
+                completion(nil, MealPlanError.noOpenLines)
+            } else {
+                completion(openLines, error)
+            }
         }
     }
     
@@ -22,23 +32,22 @@ class MealPlanManager {
         
         if let cwPlan = getDownloadedMealPlan(forMensa: mensa, forCalendarWeek: calendarWeek),
            let dayPlan = cwPlan.days[date.dayId] {
+            log.debug("Found meal plan for \(mensa) and CW\(calendarWeek) in cache, returning.")
             completion(dayPlan, nil)
             return
         }
         
-        let mealPlanDownloader = MealPlanDownloader(mensa: mensa, cw: calendarWeek)
-        mealPlanDownloader.getCWPlan { data in
+        let mealPlanDownloader = MealPlanDownloader(forMensa: mensa, forCalendarWeek: calendarWeek)
+        mealPlanDownloader.getCWPlan { data, error in
             if let cwPlan = data {
                 self.downloadedMealPlans.append(cwPlan)
                 if let dayPlan = cwPlan.days[date.dayId] {
-                    completion(dayPlan, nil)
+                    completion(dayPlan, error)
                 }
+            } else {
+                completion(nil, MealPlanError.downloadError(error ?? UnknownError()))
             }
         }
-    }
-    
-    private func downloadMealPlan(forMensa mensa: Mensa, forCalendarWeek calendarWeek: Int) {
-        
     }
     
     private func getDownloadedMealPlan(forMensa mensa: Mensa, forCalendarWeek calendarWeek: Int) -> CWPlan? {
