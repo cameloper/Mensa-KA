@@ -9,13 +9,22 @@
 /* Begin PBXBuildFile section */
 		7071FE122A417A0F001C524D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE112A417A0F001C524D /* AppDelegate.swift */; };
 		7071FE142A417A0F001C524D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE132A417A0F001C524D /* SceneDelegate.swift */; };
-		7071FE162A417A0F001C524D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE152A417A0F001C524D /* ViewController.swift */; };
 		7071FE192A417A0F001C524D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7071FE172A417A0F001C524D /* Main.storyboard */; };
 		7071FE1B2A417A12001C524D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7071FE1A2A417A12001C524D /* Assets.xcassets */; };
 		7071FE1E2A417A12001C524D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7071FE1C2A417A12001C524D /* LaunchScreen.storyboard */; };
 		7071FE292A417A12001C524D /* KA_MensaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE282A417A12001C524D /* KA_MensaTests.swift */; };
 		7071FE332A417A12001C524D /* KA_MensaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE322A417A12001C524D /* KA_MensaUITests.swift */; };
 		7071FE352A417A12001C524D /* KA_MensaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE342A417A12001C524D /* KA_MensaUITestsLaunchTests.swift */; };
+		7071FE432A417A36001C524D /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 7071FE422A417A36001C524D /* SwiftSoup */; };
+		7071FE4B2A417A5F001C524D /* CWPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE452A417A5E001C524D /* CWPlan.swift */; };
+		7071FE4D2A417A5F001C524D /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE472A417A5F001C524D /* Meal.swift */; };
+		7071FE4E2A417A5F001C524D /* Mensa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE482A417A5F001C524D /* Mensa.swift */; };
+		7071FE4F2A417A5F001C524D /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE492A417A5F001C524D /* Tag.swift */; };
+		7071FE552A417A98001C524D /* MealPlanDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE532A417A98001C524D /* MealPlanDownloader.swift */; };
+		7071FE572A417AAB001C524D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE562A417AAB001C524D /* Utils.swift */; };
+		7071FE592A417EFE001C524D /* MealPlanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE582A417EFE001C524D /* MealPlanTableViewController.swift */; };
+		7071FE5B2A417F3D001C524D /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE5A2A417F3D001C524D /* MealTableViewCell.swift */; };
+		709E06A52A41D7E300081817 /* LinePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709E06A42A41D7E300081817 /* LinePlan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +48,6 @@
 		7071FE0E2A417A0F001C524D /* KA Mensa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KA Mensa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7071FE112A417A0F001C524D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7071FE132A417A0F001C524D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7071FE152A417A0F001C524D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7071FE182A417A0F001C524D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7071FE1A2A417A12001C524D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7071FE1D2A417A12001C524D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +57,15 @@
 		7071FE2E2A417A12001C524D /* KA MensaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KA MensaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7071FE322A417A12001C524D /* KA_MensaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KA_MensaUITests.swift; sourceTree = "<group>"; };
 		7071FE342A417A12001C524D /* KA_MensaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KA_MensaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7071FE452A417A5E001C524D /* CWPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWPlan.swift; sourceTree = "<group>"; };
+		7071FE472A417A5F001C524D /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		7071FE482A417A5F001C524D /* Mensa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mensa.swift; sourceTree = "<group>"; };
+		7071FE492A417A5F001C524D /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		7071FE532A417A98001C524D /* MealPlanDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealPlanDownloader.swift; sourceTree = "<group>"; };
+		7071FE562A417AAB001C524D /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		7071FE582A417EFE001C524D /* MealPlanTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanTableViewController.swift; sourceTree = "<group>"; };
+		7071FE5A2A417F3D001C524D /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		709E06A42A41D7E300081817 /* LinePlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinePlan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7071FE432A417A36001C524D /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +117,17 @@
 		7071FE102A417A0F001C524D /* KA Mensa */ = {
 			isa = PBXGroup;
 			children = (
+				7071FE562A417AAB001C524D /* Utils.swift */,
+				7071FE512A417A88001C524D /* Data */,
+				7071FE442A417A45001C524D /* Models */,
 				7071FE112A417A0F001C524D /* AppDelegate.swift */,
 				7071FE132A417A0F001C524D /* SceneDelegate.swift */,
-				7071FE152A417A0F001C524D /* ViewController.swift */,
 				7071FE172A417A0F001C524D /* Main.storyboard */,
 				7071FE1A2A417A12001C524D /* Assets.xcassets */,
 				7071FE1C2A417A12001C524D /* LaunchScreen.storyboard */,
 				7071FE1F2A417A12001C524D /* Info.plist */,
+				7071FE582A417EFE001C524D /* MealPlanTableViewController.swift */,
+				7071FE5A2A417F3D001C524D /* MealTableViewCell.swift */,
 			);
 			path = "KA Mensa";
 			sourceTree = "<group>";
@@ -127,6 +149,26 @@
 			path = "KA MensaUITests";
 			sourceTree = "<group>";
 		};
+		7071FE442A417A45001C524D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				709E06A42A41D7E300081817 /* LinePlan.swift */,
+				7071FE452A417A5E001C524D /* CWPlan.swift */,
+				7071FE472A417A5F001C524D /* Meal.swift */,
+				7071FE482A417A5F001C524D /* Mensa.swift */,
+				7071FE492A417A5F001C524D /* Tag.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7071FE512A417A88001C524D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7071FE532A417A98001C524D /* MealPlanDownloader.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +185,9 @@
 			dependencies = (
 			);
 			name = "KA Mensa";
+			packageProductDependencies = (
+				7071FE422A417A36001C524D /* SwiftSoup */,
+			);
 			productName = "KA Mensa";
 			productReference = 7071FE0E2A417A0F001C524D /* KA Mensa.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +260,9 @@
 				Base,
 			);
 			mainGroup = 7071FE052A417A0F001C524D;
+			packageReferences = (
+				7071FE412A417A36001C524D /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 7071FE0F2A417A0F001C524D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +306,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7071FE162A417A0F001C524D /* ViewController.swift in Sources */,
+				709E06A52A41D7E300081817 /* LinePlan.swift in Sources */,
+				7071FE5B2A417F3D001C524D /* MealTableViewCell.swift in Sources */,
+				7071FE4F2A417A5F001C524D /* Tag.swift in Sources */,
+				7071FE552A417A98001C524D /* MealPlanDownloader.swift in Sources */,
+				7071FE4E2A417A5F001C524D /* Mensa.swift in Sources */,
+				7071FE4B2A417A5F001C524D /* CWPlan.swift in Sources */,
 				7071FE122A417A0F001C524D /* AppDelegate.swift in Sources */,
 				7071FE142A417A0F001C524D /* SceneDelegate.swift in Sources */,
+				7071FE4D2A417A5F001C524D /* Meal.swift in Sources */,
+				7071FE572A417AAB001C524D /* Utils.swift in Sources */,
+				7071FE592A417EFE001C524D /* MealPlanTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +501,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +530,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,6 +660,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7071FE412A417A36001C524D /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7071FE422A417A36001C524D /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7071FE412A417A36001C524D /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7071FE062A417A0F001C524D /* Project object */;
 }

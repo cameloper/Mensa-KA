@@ -1,24 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Byv-1d-Q9Z">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Mensa Name-->
+        <scene sceneID="rsD-HQ-pzD">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tableViewController id="d4h-jO-kpd" customClass="MealPlanTableViewController" customModule="KA_Mensa" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="UGJ-2c-47U">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mealCell" rowHeight="80" id="nmC-RI-7GD" customClass="MealTableViewCell" customModule="KA_Mensa" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.333332061767578" width="393" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nmC-RI-7GD" id="EA4-0b-P9T">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="regionales-schweinefleisch" translatesAutoresizingMaskIntoConstraints="NO" id="OdO-2m-weq">
+                                            <rect key="frame" x="8" y="20" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="OdO-2m-weq" secondAttribute="height" id="ZzG-Kx-uZZ"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fDa-BT-bFm">
+                                            <rect key="frame" x="321" y="8" width="64" height="64"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99,99 €" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPX-PJ-G2l">
+                                                    <rect key="frame" x="0.0" y="0.0" width="64" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qkn-oR-07G">
+                                                    <rect key="frame" x="0.0" y="40" width="64" height="24"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rJK-26-c2K">
+                                                            <rect key="frame" x="0.0" y="-0.33333333333333215" width="21.333333333333332" height="23.666666666666664"/>
+                                                            <color key="tintColor" systemColor="systemGreenColor"/>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nyV-kk-HFt">
+                                                            <rect key="frame" x="21.333333333333314" y="-0.33333333333333215" width="21.333333333333329" height="23.666666666666664"/>
+                                                            <color key="tintColor" systemColor="systemGreenColor"/>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="y6v-8X-yIp">
+                                                            <rect key="frame" x="42.666666666666686" y="-0.33333333333333215" width="21.333333333333329" height="23.666666666666664"/>
+                                                            <color key="tintColor" systemColor="systemGreenColor"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="fDa-BT-bFm" secondAttribute="height" id="SmV-na-sCw"/>
+                                            </constraints>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schweinebauch mit irgendwas" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7N2-N1-QGs">
+                                            <rect key="frame" x="56" y="8" width="257" height="64"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="fDa-BT-bFm" firstAttribute="leading" secondItem="7N2-N1-QGs" secondAttribute="trailing" constant="8" id="0CJ-dd-RF7"/>
+                                        <constraint firstItem="OdO-2m-weq" firstAttribute="centerY" secondItem="EA4-0b-P9T" secondAttribute="centerY" id="1jB-7Y-r17"/>
+                                        <constraint firstAttribute="bottom" secondItem="7N2-N1-QGs" secondAttribute="bottom" constant="8" id="9re-7g-vRd"/>
+                                        <constraint firstItem="fDa-BT-bFm" firstAttribute="height" secondItem="EA4-0b-P9T" secondAttribute="height" multiplier="0.8" id="G4N-Py-54H"/>
+                                        <constraint firstItem="OdO-2m-weq" firstAttribute="leading" secondItem="EA4-0b-P9T" secondAttribute="leading" constant="8" id="H2E-vc-hAE"/>
+                                        <constraint firstAttribute="trailing" secondItem="fDa-BT-bFm" secondAttribute="trailing" constant="8" id="WWa-NZ-Cfh"/>
+                                        <constraint firstItem="OdO-2m-weq" firstAttribute="height" secondItem="EA4-0b-P9T" secondAttribute="height" multiplier="0.5" id="bDf-K9-hP0"/>
+                                        <constraint firstItem="7N2-N1-QGs" firstAttribute="leading" secondItem="OdO-2m-weq" secondAttribute="trailing" constant="8" id="hn8-p8-xt1"/>
+                                        <constraint firstItem="7N2-N1-QGs" firstAttribute="top" secondItem="EA4-0b-P9T" secondAttribute="top" constant="8" id="oBi-sI-Kf2"/>
+                                        <constraint firstItem="fDa-BT-bFm" firstAttribute="centerY" secondItem="EA4-0b-P9T" secondAttribute="centerY" id="rgY-T9-G4z"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="iconView" destination="OdO-2m-weq" id="PzD-UL-PJJ"/>
+                                    <outlet property="nameLabel" destination="7N2-N1-QGs" id="3PU-uq-2hL"/>
+                                    <outlet property="priceLabel" destination="fPX-PJ-G2l" id="4l2-ZN-zTd"/>
+                                    <outlet property="starStackView" destination="qkn-oR-07G" id="mIf-Rv-MnH"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="d4h-jO-kpd" id="14n-sY-p1T"/>
+                            <outlet property="delegate" destination="d4h-jO-kpd" id="iEv-4S-ETG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Mensa Name" id="P7T-x2-v77">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" image="slider.horizontal.3" catalog="system" style="plain" id="hAA-IH-wQu">
+                            <color key="tintColor" systemColor="labelColor"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ixz-dK-UBL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1000.763358778626" y="689.43661971830988"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dyP-7v-mdj">
+            <objects>
+                <navigationController id="Byv-1d-Q9Z" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fh3-NZ-fIc">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="d4h-jO-kpd" kind="relationship" relationship="rootViewController" id="D54-wO-f4j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cRL-Df-Sih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93" y="690"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="regionales-schweinefleisch" width="31.943181991577148" height="31.977272033691406"/>
+        <image name="slider.horizontal.3" catalog="system" width="128" height="99"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

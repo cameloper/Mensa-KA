@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "vegetarisches-gericht.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
