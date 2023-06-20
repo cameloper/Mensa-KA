@@ -121,47 +121,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensa Selection:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyy-9U-s3B">
-                                <rect key="frame" x="16" y="48" width="136.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensa:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyy-9U-s3B">
+                                <rect key="frame" x="16" y="76" width="58" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stW-IM-Exy">
-                                <rect key="frame" x="0.0" y="80.5" width="375" height="216"/>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Selection:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1J-mT-PZ0">
-                                <rect key="frame" x="16" y="312.5" width="121" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1J-mT-PZ0">
+                                <rect key="frame" x="16" y="24" width="42.5" height="21"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="luM-4K-upK">
-                                <rect key="frame" x="0.0" y="345.5" width="375" height="34.5"/>
+                                <rect key="frame" x="66.5" y="17.5" width="292.5" height="34.5"/>
                                 <connections>
-                                    <action selector="datePickerDidChange:" destination="T50-BP-4Ut" eventType="valueChanged" id="Zhd-c0-JQa"/>
+                                    <action selector="dateChanged:" destination="T50-BP-4Ut" eventType="valueChanged" id="Zhd-c0-JQa"/>
                                 </connections>
                             </datePicker>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stW-IM-Exy">
+                                <rect key="frame" x="0.0" y="104.5" width="375" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price Category:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lz8-P5-eli">
+                                <rect key="frame" x="16" y="328.5" width="123.5" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="y3E-Gq-bUZ">
+                                <rect key="frame" x="16" y="357.5" width="343" height="32"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="priceCategoryChanged:" destination="T50-BP-4Ut" eventType="valueChanged" id="2Kz-XW-kvo"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hAy-VC-oBu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="luM-4K-upK" firstAttribute="top" secondItem="o1J-mT-PZ0" secondAttribute="bottom" constant="12" id="74Y-Ie-aCu"/>
-                            <constraint firstItem="stW-IM-Exy" firstAttribute="leading" secondItem="hAy-VC-oBu" secondAttribute="leading" id="K2w-pg-Cch"/>
-                            <constraint firstItem="luM-4K-upK" firstAttribute="trailing" secondItem="hAy-VC-oBu" secondAttribute="trailing" id="X1a-Fe-aS1"/>
-                            <constraint firstItem="Eyy-9U-s3B" firstAttribute="leading" secondItem="hAy-VC-oBu" secondAttribute="leading" constant="16" id="YSi-fO-81f"/>
-                            <constraint firstItem="stW-IM-Exy" firstAttribute="trailing" secondItem="hAy-VC-oBu" secondAttribute="trailing" id="ZgW-JV-MuO"/>
-                            <constraint firstItem="o1J-mT-PZ0" firstAttribute="top" secondItem="stW-IM-Exy" secondAttribute="bottom" constant="16" id="eaN-RC-ucF"/>
-                            <constraint firstItem="Eyy-9U-s3B" firstAttribute="top" secondItem="hAy-VC-oBu" secondAttribute="top" constant="48" id="jJJ-XW-qbq"/>
-                            <constraint firstItem="luM-4K-upK" firstAttribute="leading" secondItem="hAy-VC-oBu" secondAttribute="leading" id="jKJ-MP-bzY"/>
-                            <constraint firstItem="o1J-mT-PZ0" firstAttribute="leading" secondItem="hAy-VC-oBu" secondAttribute="leading" constant="16" id="r6C-tj-wen"/>
-                            <constraint firstItem="stW-IM-Exy" firstAttribute="top" secondItem="Eyy-9U-s3B" secondAttribute="bottom" constant="12" id="w3T-Vh-RNh"/>
+                            <constraint firstItem="stW-IM-Exy" firstAttribute="leading" secondItem="hAy-VC-oBu" secondAttribute="leading" id="288-d1-boj"/>
+                            <constraint firstItem="o1J-mT-PZ0" firstAttribute="top" secondItem="hAy-VC-oBu" secondAttribute="top" constant="24" id="3MQ-1h-Kqr"/>
+                            <constraint firstItem="hAy-VC-oBu" firstAttribute="trailing" secondItem="y3E-Gq-bUZ" secondAttribute="trailing" constant="16" id="7k6-F6-ghn"/>
+                            <constraint firstItem="stW-IM-Exy" firstAttribute="top" secondItem="Eyy-9U-s3B" secondAttribute="bottom" constant="8" id="9P2-i1-43I"/>
+                            <constraint firstItem="y3E-Gq-bUZ" firstAttribute="leading" secondItem="hAy-VC-oBu" secondAttribute="leading" constant="16" id="FnH-Mq-5yy"/>
+                            <constraint firstItem="o1J-mT-PZ0" firstAttribute="leading" secondItem="hAy-VC-oBu" secondAttribute="leading" constant="16" id="I4o-6k-fFe"/>
+                            <constraint firstItem="luM-4K-upK" firstAttribute="centerY" secondItem="o1J-mT-PZ0" secondAttribute="centerY" id="JeX-vl-t3m"/>
+                            <constraint firstItem="hAy-VC-oBu" firstAttribute="trailing" secondItem="luM-4K-upK" secondAttribute="trailing" constant="16" id="Kk8-n8-TjM"/>
+                            <constraint firstItem="stW-IM-Exy" firstAttribute="trailing" secondItem="hAy-VC-oBu" secondAttribute="trailing" id="L1H-zw-dT6"/>
+                            <constraint firstItem="Eyy-9U-s3B" firstAttribute="top" secondItem="luM-4K-upK" secondAttribute="bottom" constant="24" id="YFP-9A-WnV"/>
+                            <constraint firstItem="luM-4K-upK" firstAttribute="leading" secondItem="o1J-mT-PZ0" secondAttribute="trailing" constant="8" id="ezf-Sc-fen"/>
+                            <constraint firstItem="Eyy-9U-s3B" firstAttribute="leading" secondItem="hAy-VC-oBu" secondAttribute="leading" constant="16" id="pwk-eV-qSS"/>
+                            <constraint firstItem="y3E-Gq-bUZ" firstAttribute="top" secondItem="lz8-P5-eli" secondAttribute="bottom" constant="8" id="qOH-g6-JZA"/>
+                            <constraint firstItem="lz8-P5-eli" firstAttribute="leading" secondItem="hAy-VC-oBu" secondAttribute="leading" constant="16" id="rFn-D3-LuD"/>
+                            <constraint firstItem="lz8-P5-eli" firstAttribute="top" secondItem="stW-IM-Exy" secondAttribute="bottom" constant="8" id="vFl-R9-7bd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Exc-20-QzA"/>
                     <connections>
                         <outlet property="datePicker" destination="luM-4K-upK" id="RUL-n2-ohw"/>
                         <outlet property="mensaPicker" destination="stW-IM-Exy" id="zID-4o-1Af"/>
+                        <outlet property="priceCategoryControl" destination="y3E-Gq-bUZ" id="T8d-3b-xwB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZgG-dy-46t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

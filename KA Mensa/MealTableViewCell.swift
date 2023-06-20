@@ -31,7 +31,7 @@ class MealTableViewCell: UITableViewCell {
         starStackView.isHidden = true
     }
     
-    func setupCell(meal: Meal) {
+    func setupCell(meal: Meal, priceCategory: Meal.PriceCategory) {
         if let imageName = meal.imageName,
            let image = UIImage(named: imageName) {
             iconView.image = image
@@ -40,7 +40,7 @@ class MealTableViewCell: UITableViewCell {
         }
         
         nameLabel.text = meal.name
-        if let price = meal.prices[UserDefaults.standard.getPriceCategory()] {
+        if let price = meal.prices[priceCategory] {
             priceLabel.text = String(format: "%.2f €", price)
         } else {
             priceLabel.text = nil

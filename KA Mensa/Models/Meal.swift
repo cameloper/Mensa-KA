@@ -13,6 +13,27 @@ class Meal: Codable {
         case guest = "price_2"
         case employee = "price_3"
         case pupil = "price_4"
+        
+        var description: String {
+            switch self {
+            case .student:
+                return "Student"
+            case .guest:
+                return "Guest"
+            case .employee:
+                return "Employee"
+            case .pupil:
+                return "Pupil"
+            }
+        }
+        
+        var index: Int {
+            return PriceCategory.all.firstIndex(of: self) ?? 0
+        }
+        
+        static var all: [PriceCategory] {
+            return [.student, .guest, .employee, .pupil]
+        }
     }
     
     enum EnvScore: Int, Codable {

@@ -10,6 +10,7 @@ import UIKit
 class MealPlanTableViewController: UITableViewController, SettingsDelegate {
     @IBOutlet weak var settingsButton: UIBarButtonItem!
     var mensa: Mensa = UserDefaults.standard.getMensa()
+    var priceCategory: Meal.PriceCategory = UserDefaults.standard.getPriceCategory()
     var date = Date()
 
     let mealPlanManager = MealPlanManager()
@@ -41,6 +42,12 @@ class MealPlanTableViewController: UITableViewController, SettingsDelegate {
         getMealPlan()
     }
     
+    func settings(didChangePriceCategory priceCategory: Meal.PriceCategory) {
+        self.priceCategory = priceCategory
+        UserDefaults.standard.setPriceCategory(priceCategory)
+        tableView.reloadData()
+    }
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return dayPlan?[section].name
@@ -61,7 +68,7 @@ class MealPlanTableViewController: UITableViewController, SettingsDelegate {
                 return UITableViewCell()
         }
         
-        cell.setupCell(meal: (dayPlan?[indexPath.section].meals[indexPath.row])!)
+        cell.setupCell(meal: (dayPlan?[indexPath.section].meals[indexPath.row])!, priceCategory: priceCategory)
 
         return cell
     }
@@ -74,7 +81,7 @@ class MealPlanTableViewController: UITableViewController, SettingsDelegate {
         // Pass the selected object to the new view controller.
         if segue.identifier == "mealPlanToSettingsSegue",
            let settingsVc = segue.destination as? SettingsViewController {
-            settingsVc.setup(lastSelectedMensa: mensa, lastSelectedDate: date, delegate: self)
+            settingsVc.setup(lastSelectedMensa: mensa, lastSelectedDate: date, lastSelectedPriceCategory: priceCategory, delegate: self)
         }
     }
     
