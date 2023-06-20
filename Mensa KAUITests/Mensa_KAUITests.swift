@@ -1,13 +1,13 @@
 //
-//  KA_MensaUITests.swift
-//  KA MensaUITests
+//  Mensa_KAUITests.swift
+//  Mensa KAUITests
 //
 //  Created by Yilmaz, Ihsan on 20.06.23.
 //
 
 import XCTest
 
-final class KA_MensaUITests: XCTestCase {
+final class Mensa_KAUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

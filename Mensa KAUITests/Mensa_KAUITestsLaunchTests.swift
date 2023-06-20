@@ -1,13 +1,13 @@
 //
-//  KA_MensaUITestsLaunchTests.swift
-//  KA MensaUITests
+//  Mensa_KAUITestsLaunchTests.swift
+//  Mensa KAUITests
 //
 //  Created by Yilmaz, Ihsan on 20.06.23.
 //
 
 import XCTest
 
-final class KA_MensaUITestsLaunchTests: XCTestCase {
+final class Mensa_KAUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

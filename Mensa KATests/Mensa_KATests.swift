@@ -1,12 +1,12 @@
 //
-//  KA_MensaTests.swift
-//  KA MensaTests
+//  Mensa_KATests.swift
+//  Mensa KATests
 //
 //  Created by Yilmaz, Ihsan on 20.06.23.
 //
 
 import XCTest
-@testable import KA_Mensa
+@testable import Mensa_KA
 
 final class KA_MensaTests: XCTestCase {
 

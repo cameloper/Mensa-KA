@@ -1,6 +1,6 @@
 //
 //  MealTableViewCell.swift
-//  KA Mensa
+//  Mensa KA
 //
 //  Created by Yilmaz, Ihsan on 20.06.23.
 //

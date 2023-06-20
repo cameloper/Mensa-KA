@@ -12,9 +12,9 @@
 		7071FE192A417A0F001C524D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7071FE172A417A0F001C524D /* Main.storyboard */; };
 		7071FE1B2A417A12001C524D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7071FE1A2A417A12001C524D /* Assets.xcassets */; };
 		7071FE1E2A417A12001C524D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7071FE1C2A417A12001C524D /* LaunchScreen.storyboard */; };
-		7071FE292A417A12001C524D /* KA_MensaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE282A417A12001C524D /* KA_MensaTests.swift */; };
-		7071FE332A417A12001C524D /* KA_MensaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE322A417A12001C524D /* KA_MensaUITests.swift */; };
-		7071FE352A417A12001C524D /* KA_MensaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE342A417A12001C524D /* KA_MensaUITestsLaunchTests.swift */; };
+		7071FE292A417A12001C524D /* Mensa_KATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE282A417A12001C524D /* Mensa_KATests.swift */; };
+		7071FE332A417A12001C524D /* Mensa_KAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE322A417A12001C524D /* Mensa_KAUITests.swift */; };
+		7071FE352A417A12001C524D /* Mensa_KAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE342A417A12001C524D /* Mensa_KAUITestsLaunchTests.swift */; };
 		7071FE432A417A36001C524D /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 7071FE422A417A36001C524D /* SwiftSoup */; };
 		7071FE4B2A417A5F001C524D /* CWPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE452A417A5E001C524D /* CWPlan.swift */; };
 		7071FE4D2A417A5F001C524D /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE472A417A5F001C524D /* Meal.swift */; };
@@ -48,18 +48,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7071FE0E2A417A0F001C524D /* KA Mensa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KA Mensa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7071FE0E2A417A0F001C524D /* Mensa KA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mensa KA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7071FE112A417A0F001C524D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7071FE132A417A0F001C524D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7071FE182A417A0F001C524D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7071FE1A2A417A12001C524D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7071FE1D2A417A12001C524D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7071FE1F2A417A12001C524D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7071FE242A417A12001C524D /* KA MensaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KA MensaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7071FE282A417A12001C524D /* KA_MensaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KA_MensaTests.swift; sourceTree = "<group>"; };
-		7071FE2E2A417A12001C524D /* KA MensaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KA MensaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7071FE322A417A12001C524D /* KA_MensaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KA_MensaUITests.swift; sourceTree = "<group>"; };
-		7071FE342A417A12001C524D /* KA_MensaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KA_MensaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7071FE242A417A12001C524D /* Mensa KATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mensa KATests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7071FE282A417A12001C524D /* Mensa_KATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mensa_KATests.swift; sourceTree = "<group>"; };
+		7071FE2E2A417A12001C524D /* Mensa KAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mensa KAUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7071FE322A417A12001C524D /* Mensa_KAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mensa_KAUITests.swift; sourceTree = "<group>"; };
+		7071FE342A417A12001C524D /* Mensa_KAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mensa_KAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7071FE452A417A5E001C524D /* CWPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWPlan.swift; sourceTree = "<group>"; };
 		7071FE472A417A5F001C524D /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		7071FE482A417A5F001C524D /* Mensa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mensa.swift; sourceTree = "<group>"; };
@@ -103,9 +103,9 @@
 		7071FE052A417A0F001C524D = {
 			isa = PBXGroup;
 			children = (
-				7071FE102A417A0F001C524D /* KA Mensa */,
-				7071FE272A417A12001C524D /* KA MensaTests */,
-				7071FE312A417A12001C524D /* KA MensaUITests */,
+				7071FE102A417A0F001C524D /* Mensa KA */,
+				7071FE272A417A12001C524D /* Mensa KATests */,
+				7071FE312A417A12001C524D /* Mensa KAUITests */,
 				7071FE0F2A417A0F001C524D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,14 +113,14 @@
 		7071FE0F2A417A0F001C524D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7071FE0E2A417A0F001C524D /* KA Mensa.app */,
-				7071FE242A417A12001C524D /* KA MensaTests.xctest */,
-				7071FE2E2A417A12001C524D /* KA MensaUITests.xctest */,
+				7071FE0E2A417A0F001C524D /* Mensa KA.app */,
+				7071FE242A417A12001C524D /* Mensa KATests.xctest */,
+				7071FE2E2A417A12001C524D /* Mensa KAUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7071FE102A417A0F001C524D /* KA Mensa */ = {
+		7071FE102A417A0F001C524D /* Mensa KA */ = {
 			isa = PBXGroup;
 			children = (
 				70F758312A420075002B5CBE /* ViewControllers */,
@@ -135,24 +135,24 @@
 				7071FE1F2A417A12001C524D /* Info.plist */,
 				7071FE5A2A417F3D001C524D /* MealTableViewCell.swift */,
 			);
-			path = "KA Mensa";
+			path = "Mensa KA";
 			sourceTree = "<group>";
 		};
-		7071FE272A417A12001C524D /* KA MensaTests */ = {
+		7071FE272A417A12001C524D /* Mensa KATests */ = {
 			isa = PBXGroup;
 			children = (
-				7071FE282A417A12001C524D /* KA_MensaTests.swift */,
+				7071FE282A417A12001C524D /* Mensa_KATests.swift */,
 			);
-			path = "KA MensaTests";
+			path = "Mensa KATests";
 			sourceTree = "<group>";
 		};
-		7071FE312A417A12001C524D /* KA MensaUITests */ = {
+		7071FE312A417A12001C524D /* Mensa KAUITests */ = {
 			isa = PBXGroup;
 			children = (
-				7071FE322A417A12001C524D /* KA_MensaUITests.swift */,
-				7071FE342A417A12001C524D /* KA_MensaUITestsLaunchTests.swift */,
+				7071FE322A417A12001C524D /* Mensa_KAUITests.swift */,
+				7071FE342A417A12001C524D /* Mensa_KAUITestsLaunchTests.swift */,
 			);
-			path = "KA MensaUITests";
+			path = "Mensa KAUITests";
 			sourceTree = "<group>";
 		};
 		7071FE442A417A45001C524D /* Models */ = {
@@ -189,9 +189,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7071FE0D2A417A0F001C524D /* KA Mensa */ = {
+		7071FE0D2A417A0F001C524D /* Mensa KA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7071FE382A417A12001C524D /* Build configuration list for PBXNativeTarget "KA Mensa" */;
+			buildConfigurationList = 7071FE382A417A12001C524D /* Build configuration list for PBXNativeTarget "Mensa KA" */;
 			buildPhases = (
 				7071FE0A2A417A0F001C524D /* Sources */,
 				7071FE0B2A417A0F001C524D /* Frameworks */,
@@ -201,17 +201,17 @@
 			);
 			dependencies = (
 			);
-			name = "KA Mensa";
+			name = "Mensa KA";
 			packageProductDependencies = (
 				7071FE422A417A36001C524D /* SwiftSoup */,
 			);
 			productName = "KA Mensa";
-			productReference = 7071FE0E2A417A0F001C524D /* KA Mensa.app */;
+			productReference = 7071FE0E2A417A0F001C524D /* Mensa KA.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7071FE232A417A12001C524D /* KA MensaTests */ = {
+		7071FE232A417A12001C524D /* Mensa KATests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7071FE3B2A417A12001C524D /* Build configuration list for PBXNativeTarget "KA MensaTests" */;
+			buildConfigurationList = 7071FE3B2A417A12001C524D /* Build configuration list for PBXNativeTarget "Mensa KATests" */;
 			buildPhases = (
 				7071FE202A417A12001C524D /* Sources */,
 				7071FE212A417A12001C524D /* Frameworks */,
@@ -222,14 +222,14 @@
 			dependencies = (
 				7071FE262A417A12001C524D /* PBXTargetDependency */,
 			);
-			name = "KA MensaTests";
+			name = "Mensa KATests";
 			productName = "KA MensaTests";
-			productReference = 7071FE242A417A12001C524D /* KA MensaTests.xctest */;
+			productReference = 7071FE242A417A12001C524D /* Mensa KATests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7071FE2D2A417A12001C524D /* KA MensaUITests */ = {
+		7071FE2D2A417A12001C524D /* Mensa KAUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7071FE3E2A417A12001C524D /* Build configuration list for PBXNativeTarget "KA MensaUITests" */;
+			buildConfigurationList = 7071FE3E2A417A12001C524D /* Build configuration list for PBXNativeTarget "Mensa KAUITests" */;
 			buildPhases = (
 				7071FE2A2A417A12001C524D /* Sources */,
 				7071FE2B2A417A12001C524D /* Frameworks */,
@@ -240,9 +240,9 @@
 			dependencies = (
 				7071FE302A417A12001C524D /* PBXTargetDependency */,
 			);
-			name = "KA MensaUITests";
+			name = "Mensa KAUITests";
 			productName = "KA MensaUITests";
-			productReference = 7071FE2E2A417A12001C524D /* KA MensaUITests.xctest */;
+			productReference = 7071FE2E2A417A12001C524D /* Mensa KAUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -268,7 +268,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7071FE092A417A0F001C524D /* Build configuration list for PBXProject "KA Mensa" */;
+			buildConfigurationList = 7071FE092A417A0F001C524D /* Build configuration list for PBXProject "Mensa KA" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -284,9 +284,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7071FE0D2A417A0F001C524D /* KA Mensa */,
-				7071FE232A417A12001C524D /* KA MensaTests */,
-				7071FE2D2A417A12001C524D /* KA MensaUITests */,
+				7071FE0D2A417A0F001C524D /* Mensa KA */,
+				7071FE232A417A12001C524D /* Mensa KATests */,
+				7071FE2D2A417A12001C524D /* Mensa KAUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -344,7 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7071FE292A417A12001C524D /* KA_MensaTests.swift in Sources */,
+				7071FE292A417A12001C524D /* Mensa_KATests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,8 +352,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7071FE352A417A12001C524D /* KA_MensaUITestsLaunchTests.swift in Sources */,
-				7071FE332A417A12001C524D /* KA_MensaUITests.swift in Sources */,
+				7071FE352A417A12001C524D /* Mensa_KAUITestsLaunchTests.swift in Sources */,
+				7071FE332A417A12001C524D /* Mensa_KAUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,12 +362,12 @@
 /* Begin PBXTargetDependency section */
 		7071FE262A417A12001C524D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7071FE0D2A417A0F001C524D /* KA Mensa */;
+			target = 7071FE0D2A417A0F001C524D /* Mensa KA */;
 			targetProxy = 7071FE252A417A12001C524D /* PBXContainerItemProxy */;
 		};
 		7071FE302A417A12001C524D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7071FE0D2A417A0F001C524D /* KA Mensa */;
+			target = 7071FE0D2A417A0F001C524D /* Mensa KA */;
 			targetProxy = 7071FE2F2A417A12001C524D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -515,7 +515,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PFNAA7QQ4N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "KA Mensa/Info.plist";
+				INFOPLIST_FILE = "Mensa KA/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -527,7 +527,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cameloper.KA-Mensa";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cameloper.Mensa-KA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -544,7 +544,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PFNAA7QQ4N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "KA Mensa/Info.plist";
+				INFOPLIST_FILE = "Mensa KA/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -556,7 +556,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cameloper.KA-Mensa";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cameloper.Mensa-KA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -580,7 +580,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KA Mensa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KA Mensa";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mensa KA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mensa KA";
 			};
 			name = Debug;
 		};
@@ -600,7 +600,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KA Mensa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KA Mensa";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mensa KA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Mensa KA";
 			};
 			name = Release;
 		};
@@ -613,12 +613,12 @@
 				DEVELOPMENT_TEAM = PFNAA7QQ4N;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cameloper.KA-MensaUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cameloper.Mensa-KAUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "KA Mensa";
+				TEST_TARGET_NAME = "Mensa KA";
 			};
 			name = Debug;
 		};
@@ -631,19 +631,19 @@
 				DEVELOPMENT_TEAM = PFNAA7QQ4N;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cameloper.KA-MensaUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cameloper.Mensa-KAUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "KA Mensa";
+				TEST_TARGET_NAME = "Mensa KA";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7071FE092A417A0F001C524D /* Build configuration list for PBXProject "KA Mensa" */ = {
+		7071FE092A417A0F001C524D /* Build configuration list for PBXProject "Mensa KA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7071FE362A417A12001C524D /* Debug */,
@@ -652,7 +652,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7071FE382A417A12001C524D /* Build configuration list for PBXNativeTarget "KA Mensa" */ = {
+		7071FE382A417A12001C524D /* Build configuration list for PBXNativeTarget "Mensa KA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7071FE392A417A12001C524D /* Debug */,
@@ -661,7 +661,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7071FE3B2A417A12001C524D /* Build configuration list for PBXNativeTarget "KA MensaTests" */ = {
+		7071FE3B2A417A12001C524D /* Build configuration list for PBXNativeTarget "Mensa KATests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7071FE3C2A417A12001C524D /* Debug */,
@@ -670,7 +670,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7071FE3E2A417A12001C524D /* Build configuration list for PBXNativeTarget "KA MensaUITests" */ = {
+		7071FE3E2A417A12001C524D /* Build configuration list for PBXNativeTarget "Mensa KAUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7071FE3F2A417A12001C524D /* Debug */,
