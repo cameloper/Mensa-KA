@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -45,15 +46,15 @@
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rJK-26-c2K">
                                                             <rect key="frame" x="0.0" y="-0.5" width="21.5" height="24"/>
-                                                            <color key="tintColor" systemColor="systemGreenColor"/>
+                                                            <color key="tintColor" name="AccentColor"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nyV-kk-HFt">
                                                             <rect key="frame" x="21.5" y="-0.5" width="21" height="24"/>
-                                                            <color key="tintColor" systemColor="systemGreenColor"/>
+                                                            <color key="tintColor" name="AccentColor"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="y6v-8X-yIp">
                                                             <rect key="frame" x="42.5" y="-0.5" width="21.5" height="24"/>
-                                                            <color key="tintColor" systemColor="systemGreenColor"/>
+                                                            <color key="tintColor" name="AccentColor"/>
                                                         </imageView>
                                                     </subviews>
                                                 </stackView>
@@ -97,7 +98,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Mensa Name" id="P7T-x2-v77">
                         <barButtonItem key="rightBarButtonItem" title="Settings" image="slider.horizontal.3" catalog="system" id="lYq-z0-6TU">
-                            <color key="tintColor" systemColor="labelColor"/>
+                            <color key="tintColor" name="AccentColor"/>
                             <connections>
                                 <segue destination="T50-BP-4Ut" kind="popoverPresentation" identifier="mealPlanToSettingsSegue" popoverAnchorBarButtonItem="lYq-z0-6TU" id="her-b1-EGH">
                                     <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -135,12 +136,14 @@
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="luM-4K-upK">
                                 <rect key="frame" x="66.5" y="17.5" width="292.5" height="34.5"/>
+                                <color key="tintColor" name="AccentColor"/>
                                 <connections>
                                     <action selector="dateChanged:" destination="T50-BP-4Ut" eventType="valueChanged" id="Zhd-c0-JQa"/>
                                 </connections>
                             </datePicker>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stW-IM-Exy">
                                 <rect key="frame" x="0.0" y="104.5" width="375" height="216"/>
+                                <color key="tintColor" name="AccentColor"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price Category:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lz8-P5-eli">
                                 <rect key="frame" x="16" y="328.5" width="123.5" height="21"/>
@@ -154,16 +157,27 @@
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
+                                <color key="tintColor" name="AccentColor"/>
                                 <connections>
                                     <action selector="priceCategoryChanged:" destination="T50-BP-4Ut" eventType="valueChanged" id="2Kz-XW-kvo"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWG-VH-ffF">
+                                <rect key="frame" x="16" y="412.5" width="343" height="35"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Done"/>
+                                <connections>
+                                    <action selector="userTappedDone:" destination="T50-BP-4Ut" eventType="touchUpInside" id="7B7-50-Oow"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hAy-VC-oBu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="stW-IM-Exy" firstAttribute="leading" secondItem="hAy-VC-oBu" secondAttribute="leading" id="288-d1-boj"/>
                             <constraint firstItem="o1J-mT-PZ0" firstAttribute="top" secondItem="hAy-VC-oBu" secondAttribute="top" constant="24" id="3MQ-1h-Kqr"/>
+                            <constraint firstItem="bWG-VH-ffF" firstAttribute="top" secondItem="y3E-Gq-bUZ" secondAttribute="bottom" constant="24" id="47m-yG-yy1"/>
                             <constraint firstItem="hAy-VC-oBu" firstAttribute="trailing" secondItem="y3E-Gq-bUZ" secondAttribute="trailing" constant="16" id="7k6-F6-ghn"/>
                             <constraint firstItem="stW-IM-Exy" firstAttribute="top" secondItem="Eyy-9U-s3B" secondAttribute="bottom" constant="8" id="9P2-i1-43I"/>
                             <constraint firstItem="y3E-Gq-bUZ" firstAttribute="leading" secondItem="hAy-VC-oBu" secondAttribute="leading" constant="16" id="FnH-Mq-5yy"/>
@@ -172,7 +186,9 @@
                             <constraint firstItem="hAy-VC-oBu" firstAttribute="trailing" secondItem="luM-4K-upK" secondAttribute="trailing" constant="16" id="Kk8-n8-TjM"/>
                             <constraint firstItem="stW-IM-Exy" firstAttribute="trailing" secondItem="hAy-VC-oBu" secondAttribute="trailing" id="L1H-zw-dT6"/>
                             <constraint firstItem="Eyy-9U-s3B" firstAttribute="top" secondItem="luM-4K-upK" secondAttribute="bottom" constant="24" id="YFP-9A-WnV"/>
+                            <constraint firstItem="hAy-VC-oBu" firstAttribute="trailing" secondItem="bWG-VH-ffF" secondAttribute="trailing" constant="16" id="dMy-PG-He4"/>
                             <constraint firstItem="luM-4K-upK" firstAttribute="leading" secondItem="o1J-mT-PZ0" secondAttribute="trailing" constant="8" id="ezf-Sc-fen"/>
+                            <constraint firstItem="bWG-VH-ffF" firstAttribute="leading" secondItem="hAy-VC-oBu" secondAttribute="leading" constant="16" id="kVf-yz-as1"/>
                             <constraint firstItem="Eyy-9U-s3B" firstAttribute="leading" secondItem="hAy-VC-oBu" secondAttribute="leading" constant="16" id="pwk-eV-qSS"/>
                             <constraint firstItem="y3E-Gq-bUZ" firstAttribute="top" secondItem="lz8-P5-eli" secondAttribute="bottom" constant="8" id="qOH-g6-JZA"/>
                             <constraint firstItem="lz8-P5-eli" firstAttribute="leading" secondItem="hAy-VC-oBu" secondAttribute="leading" constant="16" id="rFn-D3-LuD"/>
@@ -212,14 +228,11 @@
         <image name="slider.horizontal.3" catalog="system" width="128" height="99"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <namedColor name="AccentColor">
+            <color red="0.47843137254901963" green="0.67450980392156867" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

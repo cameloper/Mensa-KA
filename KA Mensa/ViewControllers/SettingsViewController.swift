@@ -81,4 +81,7 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         settingsDelegate?.settings(didChangePriceCategory: self.lastSelectedPriceCategory!)
     }
     
+    @IBAction func userTappedDone(_ sender: Any) {
+        presentingViewController?.dismiss(animated: true)
+    }
 }

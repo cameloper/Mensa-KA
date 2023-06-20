@@ -19,10 +19,14 @@ class MealPlanTableViewController: UITableViewController, SettingsDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.clearsSelectionOnViewWillAppear = false
+        
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        
         getMealPlan()
     }
     
     func getMealPlan() {
+        navigationItem.title = mensa.shortName
         mealPlanManager.getNonEmptyLinePlans(forMensa: mensa, forDate: date) { dayPlan, error in
             self.dayPlan = dayPlan
             DispatchQueue.main.async {

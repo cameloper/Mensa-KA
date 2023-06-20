@@ -35,6 +35,10 @@ enum Mensa: String {
         }
     }
     
+    var shortName: String {
+        return name.split(separator: " ").dropFirst().joined(separator: " ")
+    }
+    
     var index: Int {
         return Mensa.all.firstIndex(of: self) ?? 0
     }
