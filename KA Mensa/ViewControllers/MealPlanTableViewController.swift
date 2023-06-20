@@ -7,20 +7,30 @@
 
 import UIKit
 
-class MealPlanTableViewController: UITableViewController {
-    let date = Date()
+class MealPlanTableViewController: UITableViewController, SettingsDelegate {
+    @IBOutlet weak var settingsButton: UIBarButtonItem!
+    var mensa: Mensa = UserDefaults.standard.getMensa()
+    var date = Date()
     var mealPlanDownloader: MealPlanDownloader?
     var cwPlan: CWPlan?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.clearsSelectionOnViewWillAppear = false
-
-        mealPlanDownloader = MealPlanDownloader(mensa: UserDefaults.standard.getMensa(), cw: date.calendarWeek)
-        mealPlanDownloader?.getCWPlan { newPlan in
-            self.cwPlan = newPlan
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
+        downloadCWPlan()
+    }
+    
+    func downloadCWPlan() {
+        if cwPlan?.calendarWeek == date.calendarWeek,
+           cwPlan?.mensa == mensa {
+            self.tableView.reloadData()
+        } else {
+            mealPlanDownloader = MealPlanDownloader(mensa: mensa, cw: date.calendarWeek)
+            mealPlanDownloader?.getCWPlan { newPlan in
+                self.cwPlan = newPlan
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             }
         }
     }
@@ -29,6 +39,17 @@ class MealPlanTableViewController: UITableViewController {
         return cwPlan?.days[date.dayId]?.filter { !$0.meals.isEmpty }
     }
 
+    func settings(didChangeMensa mensa: Mensa) {
+        self.mensa = mensa
+        downloadCWPlan()
+        UserDefaults.standard.setMensa(mensa)
+    }
+    
+    func settings(didChangeDate date: Date) {
+        self.date = date
+        downloadCWPlan()
+    }
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return linePlans?[section].name
@@ -88,15 +109,17 @@ class MealPlanTableViewController: UITableViewController {
         return true
     }
     */
-
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "mealPlanToSettingsSegue",
+           let settingsVc = segue.destination as? SettingsViewController {
+            settingsVc.setup(lastSelectedMensa: mensa, lastSelectedDate: date, delegate: self)
+        }
     }
-    */
-
+    
 }

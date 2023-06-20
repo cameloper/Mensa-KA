@@ -8,9 +8,13 @@
 import Foundation
 
 class CWPlan {
+    let mensa: Mensa
+    let calendarWeek: Int
     let days: [String: [LinePlan]]
     
-    init(days: [String: [LinePlan]]) {
+    init(mensa: Mensa, calendarWeek: Int, days: [String: [LinePlan]]) {
+        self.mensa = mensa
+        self.calendarWeek = calendarWeek
         self.days = days
     }
 }

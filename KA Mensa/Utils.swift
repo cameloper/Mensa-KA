@@ -8,23 +8,33 @@
 import Foundation
 
 extension UserDefaults {
-    static private let mensaKey = "uerMensa"
+    static private let mensaKey = "userMensa"
     static private let priceCategoryKey = "priceCategory"
     
     func getMensa() -> Mensa {
-        UserDefaults.standard.object(forKey: UserDefaults.mensaKey) as? Mensa ?? .mensa_adenauerring
+        if let value = UserDefaults.standard.string(forKey: UserDefaults.mensaKey),
+            let mensa = Mensa(rawValue: value) {
+            return mensa
+        } else {
+            return .adenauerring
+        }
     }
     
     func setMensa(_ mensa:  Mensa) {
-        UserDefaults.standard.set(mensa, forKey: UserDefaults.mensaKey)
+        UserDefaults.standard.set(mensa.rawValue, forKey: UserDefaults.mensaKey)
     }
     
     func getPriceCategory() -> Meal.PriceCategory {
-        UserDefaults.standard.object(forKey: UserDefaults.priceCategoryKey) as? Meal.PriceCategory ?? .student
+        if let value = UserDefaults.standard.string(forKey: UserDefaults.priceCategoryKey),
+           let priceCategory = Meal.PriceCategory(rawValue: value) {
+            return priceCategory
+        } else {
+            return .student
+        }
     }
     
     func setPriceCategory(_ priceCategory: Meal.PriceCategory) {
-        UserDefaults.standard.set(priceCategory, forKey: UserDefaults.priceCategoryKey)
+        UserDefaults.standard.set(priceCategory.rawValue, forKey: UserDefaults.priceCategoryKey)
     }
 }
 

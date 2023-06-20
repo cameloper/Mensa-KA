@@ -25,6 +25,7 @@
 		7071FE592A417EFE001C524D /* MealPlanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE582A417EFE001C524D /* MealPlanTableViewController.swift */; };
 		7071FE5B2A417F3D001C524D /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE5A2A417F3D001C524D /* MealTableViewCell.swift */; };
 		709E06A52A41D7E300081817 /* LinePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709E06A42A41D7E300081817 /* LinePlan.swift */; };
+		70F758332A4200AB002B5CBE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F758322A4200AB002B5CBE /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		7071FE582A417EFE001C524D /* MealPlanTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanTableViewController.swift; sourceTree = "<group>"; };
 		7071FE5A2A417F3D001C524D /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		709E06A42A41D7E300081817 /* LinePlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinePlan.swift; sourceTree = "<group>"; };
+		70F758322A4200AB002B5CBE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		7071FE102A417A0F001C524D /* KA Mensa */ = {
 			isa = PBXGroup;
 			children = (
+				70F758312A420075002B5CBE /* ViewControllers */,
 				7071FE562A417AAB001C524D /* Utils.swift */,
 				7071FE512A417A88001C524D /* Data */,
 				7071FE442A417A45001C524D /* Models */,
@@ -126,7 +129,6 @@
 				7071FE1A2A417A12001C524D /* Assets.xcassets */,
 				7071FE1C2A417A12001C524D /* LaunchScreen.storyboard */,
 				7071FE1F2A417A12001C524D /* Info.plist */,
-				7071FE582A417EFE001C524D /* MealPlanTableViewController.swift */,
 				7071FE5A2A417F3D001C524D /* MealTableViewCell.swift */,
 			);
 			path = "KA Mensa";
@@ -167,6 +169,15 @@
 				7071FE532A417A98001C524D /* MealPlanDownloader.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		70F758312A420075002B5CBE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7071FE582A417EFE001C524D /* MealPlanTableViewController.swift */,
+				70F758322A4200AB002B5CBE /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +328,7 @@
 				7071FE4D2A417A5F001C524D /* Meal.swift in Sources */,
 				7071FE572A417AAB001C524D /* Utils.swift in Sources */,
 				7071FE592A417EFE001C524D /* MealPlanTableViewController.swift in Sources */,
+				70F758332A4200AB002B5CBE /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

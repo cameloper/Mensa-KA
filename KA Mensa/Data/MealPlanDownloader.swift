@@ -28,7 +28,7 @@ class MealPlanDownloader {
             fatalError("Could not build url")
         }
         
-        var reqURL = baseURL.appending(path: mensa.id)
+        var reqURL = baseURL.appending(path: mensa.rawValue)
         reqURL.append(queryItems: [
             URLQueryItem(name: "kw", value: String(cw))
         ])
@@ -64,7 +64,7 @@ class MealPlanDownloader {
                 }
             }
             
-            return CWPlan(days: dayPlans)
+            return CWPlan(mensa: mensa, calendarWeek: cw, days: dayPlans)
         } catch let error {
             print(error)
         }

@@ -7,14 +7,29 @@
 
 import Foundation
 
-class Mensa {
-    public static let mensa_adenauerring = Mensa(id: "mensa_adenauerring", name: "Mensa am Adenauerring")
+enum Mensa: String {
+    case adenauerring = "mensa_adenauerring"
+    case gottesaue = "mensa_gottesaue"
     
-    let id: String
-    let name: String
+    var name: String {
+        switch self {
+        case .adenauerring:
+            return "Mensa am Adenauerring"
+        case .gottesaue:
+            return "Menseria Schloss Gottesaue"
+        }
+    }
     
-    init(id: String, name: String) {
-        self.id = id
-        self.name = name
+    var index: Int {
+        switch self {
+        case .adenauerring:
+            return 0
+        case .gottesaue:
+            return 1
+        }
+    }
+    
+    static var all: [Mensa] {
+        return [.adenauerring, .gottesaue]
     }
 }
