@@ -26,6 +26,7 @@
 		7071FE5B2A417F3D001C524D /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE5A2A417F3D001C524D /* MealTableViewCell.swift */; };
 		709E06A52A41D7E300081817 /* LinePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709E06A42A41D7E300081817 /* LinePlan.swift */; };
 		70F758332A4200AB002B5CBE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F758322A4200AB002B5CBE /* SettingsViewController.swift */; };
+		70F758352A421119002B5CBE /* MealPlanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F758342A421119002B5CBE /* MealPlanManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		7071FE5A2A417F3D001C524D /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		709E06A42A41D7E300081817 /* LinePlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinePlan.swift; sourceTree = "<group>"; };
 		70F758322A4200AB002B5CBE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		70F758342A421119002B5CBE /* MealPlanManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				7071FE532A417A98001C524D /* MealPlanDownloader.swift */,
+				70F758342A421119002B5CBE /* MealPlanManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				7071FE4D2A417A5F001C524D /* Meal.swift in Sources */,
 				7071FE572A417AAB001C524D /* Utils.swift in Sources */,
 				7071FE592A417EFE001C524D /* MealPlanTableViewController.swift in Sources */,
+				70F758352A421119002B5CBE /* MealPlanManager.swift in Sources */,
 				70F758332A4200AB002B5CBE /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
