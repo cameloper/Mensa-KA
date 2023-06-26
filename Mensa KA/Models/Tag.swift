@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 enum Tag: String, Codable {
     enum Category {
@@ -186,6 +187,10 @@ enum Tag: String, Codable {
         ]
         
         return descriptions[self] ?? self.rawValue
+    }
+    
+    var image: UIImage? {
+        return UIImage(named: rawValue)
     }
 
 }
