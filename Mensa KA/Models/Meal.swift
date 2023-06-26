@@ -17,13 +17,13 @@ class Meal: Codable {
         var description: String {
             switch self {
             case .student:
-                return "Student"
+                return "Studierende"
             case .guest:
-                return "Guest"
+                return "Gast"
             case .employee:
-                return "Employee"
+                return "Mitarbeiter"
             case .pupil:
-                return "Pupil"
+                return "Schüler*in"
             }
         }
         
