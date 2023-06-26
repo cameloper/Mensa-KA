@@ -16,7 +16,11 @@ class MealDetailsTableViewController: UITableViewController {
     }
     
     private func tags(forSection section: Int) -> [Tag]? {
-        return tags?.tags(withCategory: Tag.Category.all[section - 1])
+        if let tags = tags {
+            return tags.tags(withCategory: tags.presentCategories[section - 1])
+        }
+        
+        return nil
     }
 
     // MARK: - Table view data source
