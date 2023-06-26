@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Byv-1d-Q9Z">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <accessibilityOverrides dynamicTypePreference="2"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -16,25 +16,26 @@
             <objects>
                 <tableViewController id="d4h-jO-kpd" customClass="MealPlanTableViewController" customModule="Mensa_KA" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="UGJ-2c-47U">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mealCell" rowHeight="80" id="nmC-RI-7GD" customClass="MealTableViewCell" customModule="Mensa_KA" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="55.333332061767578" width="430" height="80"/>
+                                <rect key="frame" x="0.0" y="55.333332061767578" width="390" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nmC-RI-7GD" id="EA4-0b-P9T">
-                                    <rect key="frame" x="0.0" y="0.0" width="430" height="80"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="regionales-schweinefleisch" translatesAutoresizingMaskIntoConstraints="NO" id="OdO-2m-weq">
                                             <rect key="frame" x="8" y="20" width="40" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="OdO-2m-weq" secondAttribute="height" id="ZzG-Kx-uZZ"/>
+                                                <constraint firstAttribute="width" constant="40" id="nFe-FN-fQC"/>
                                             </constraints>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fDa-BT-bFm">
-                                            <rect key="frame" x="346" y="8" width="64" height="64"/>
+                                            <rect key="frame" x="306" y="8" width="64" height="64"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99,99 €" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPX-PJ-G2l">
                                                     <rect key="frame" x="0.0" y="0.0" width="64" height="24"/>
@@ -65,7 +66,7 @@
                                             </constraints>
                                         </stackView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schweinebauch mit irgendwas" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7N2-N1-QGs">
-                                            <rect key="frame" x="56" y="8" width="282" height="64"/>
+                                            <rect key="frame" x="56" y="30" width="242" height="20.333333333333329"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -74,13 +75,12 @@
                                     <constraints>
                                         <constraint firstItem="fDa-BT-bFm" firstAttribute="leading" secondItem="7N2-N1-QGs" secondAttribute="trailing" constant="8" id="0CJ-dd-RF7"/>
                                         <constraint firstItem="OdO-2m-weq" firstAttribute="centerY" secondItem="EA4-0b-P9T" secondAttribute="centerY" id="1jB-7Y-r17"/>
-                                        <constraint firstAttribute="bottom" secondItem="7N2-N1-QGs" secondAttribute="bottom" constant="8" id="9re-7g-vRd"/>
                                         <constraint firstItem="fDa-BT-bFm" firstAttribute="height" secondItem="EA4-0b-P9T" secondAttribute="height" multiplier="0.8" id="G4N-Py-54H"/>
                                         <constraint firstItem="OdO-2m-weq" firstAttribute="leading" secondItem="EA4-0b-P9T" secondAttribute="leading" constant="8" id="H2E-vc-hAE"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="fDa-BT-bFm" secondAttribute="trailing" id="WWa-NZ-Cfh"/>
-                                        <constraint firstItem="OdO-2m-weq" firstAttribute="height" secondItem="EA4-0b-P9T" secondAttribute="height" multiplier="0.5" id="bDf-K9-hP0"/>
+                                        <constraint firstItem="OdO-2m-weq" firstAttribute="height" relation="lessThanOrEqual" secondItem="EA4-0b-P9T" secondAttribute="height" multiplier="0.5" id="bDf-K9-hP0"/>
                                         <constraint firstItem="7N2-N1-QGs" firstAttribute="leading" secondItem="OdO-2m-weq" secondAttribute="trailing" constant="8" id="hn8-p8-xt1"/>
-                                        <constraint firstItem="7N2-N1-QGs" firstAttribute="top" secondItem="EA4-0b-P9T" secondAttribute="top" constant="8" id="oBi-sI-Kf2"/>
+                                        <constraint firstItem="7N2-N1-QGs" firstAttribute="centerY" secondItem="EA4-0b-P9T" secondAttribute="centerY" id="rBu-0F-ulL"/>
                                         <constraint firstItem="fDa-BT-bFm" firstAttribute="centerY" secondItem="EA4-0b-P9T" secondAttribute="centerY" id="rgY-T9-G4z"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -121,7 +121,7 @@
             <objects>
                 <viewController title="SettingsViewController" id="T50-BP-4Ut" customClass="SettingsViewController" customModule="Mensa_KA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jrp-J3-Ri8">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensa:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyy-9U-s3B">
@@ -137,14 +137,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="luM-4K-upK">
-                                <rect key="frame" x="82" y="17.000000000000004" width="332" height="34.333333333333343"/>
+                                <rect key="frame" x="82" y="17.000000000000004" width="292" height="34.333333333333343"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <connections>
                                     <action selector="dateChanged:" destination="T50-BP-4Ut" eventType="valueChanged" id="Zhd-c0-JQa"/>
                                 </connections>
                             </datePicker>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stW-IM-Exy">
-                                <rect key="frame" x="0.0" y="103.66666666666669" width="430" height="216"/>
+                                <rect key="frame" x="0.0" y="103.66666666666669" width="390" height="216"/>
                                 <color key="tintColor" name="AccentColor"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preiskategorie:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lz8-P5-eli">
@@ -154,7 +154,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="y3E-Gq-bUZ">
-                                <rect key="frame" x="16" y="356" width="398" height="32"/>
+                                <rect key="frame" x="16" y="356" width="358" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -165,7 +165,7 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWG-VH-ffF">
-                                <rect key="frame" x="16" y="411" width="398" height="34.333333333333314"/>
+                                <rect key="frame" x="16" y="411" width="358" height="34.333333333333314"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Fertig"/>
@@ -213,19 +213,19 @@
             <objects>
                 <tableViewController id="LED-pv-7Fu" customClass="MealDetailsTableViewController" customModule="Mensa_KA" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Qws-na-43K">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="allergenAdditiveCell" id="FpV-42-w05">
-                                <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FpV-42-w05" id="7JZ-y9-TDh">
-                                    <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kann beim übermäßigen Verzehr abführend wirken" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1An-6R-AQ2">
-                                            <rect key="frame" x="20" y="11.666666666666666" width="390" height="20.333333333333336"/>
+                                            <rect key="frame" x="20" y="11.666666666666666" width="350" height="20.333333333333336"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -239,32 +239,32 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tagCell" rowHeight="50" id="F02-un-ZyV" customClass="TagTableViewCell" customModule="Mensa_KA" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="93.666667938232422" width="430" height="50"/>
+                                <rect key="frame" x="0.0" y="93.666667938232422" width="390" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F02-un-ZyV" id="1Pj-WJ-SW0">
-                                    <rect key="frame" x="0.0" y="0.0" width="430" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="regionales-schweinefleisch" translatesAutoresizingMaskIntoConstraints="NO" id="28g-fW-tvW">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="regionales-schweinefleisch" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="28g-fW-tvW">
                                             <rect key="frame" x="20" y="5" width="40" height="40"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="28g-fW-tvW" secondAttribute="height" id="hAu-pj-keh"/>
+                                                <constraint firstAttribute="width" secondItem="28g-fW-tvW" secondAttribute="height" multiplier="1:1" id="mMk-iM-7U5"/>
+                                                <constraint firstAttribute="width" constant="40" id="mcM-Ns-OCr"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="enthält regionales Schweinefleisch aus artgerechter Tierhaltung" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qqv-Kd-90U">
-                                            <rect key="frame" x="68" y="14.666666666666664" width="342" height="21"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="enthält regionales Schweinefleisch aus artgerechter Tierhaltung" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqv-Kd-90U">
+                                            <rect key="frame" x="68" y="5.3333333333333321" width="302" height="39.666666666666671"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="28g-fW-tvW" firstAttribute="centerY" secondItem="1Pj-WJ-SW0" secondAttribute="centerY" id="4Lr-mP-fyX"/>
-                                        <constraint firstItem="Qqv-Kd-90U" firstAttribute="height" secondItem="28g-fW-tvW" secondAttribute="height" multiplier="0.525" id="9vP-W3-myf"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="Qqv-Kd-90U" secondAttribute="trailing" id="N1V-OL-ahL"/>
                                         <constraint firstItem="28g-fW-tvW" firstAttribute="leading" secondItem="1Pj-WJ-SW0" secondAttribute="leadingMargin" id="SzQ-0S-Lqa"/>
+                                        <constraint firstItem="28g-fW-tvW" firstAttribute="height" relation="lessThanOrEqual" secondItem="1Pj-WJ-SW0" secondAttribute="height" multiplier="0.8" id="aYi-bg-pCs"/>
                                         <constraint firstItem="Qqv-Kd-90U" firstAttribute="centerY" secondItem="28g-fW-tvW" secondAttribute="centerY" id="dxP-kc-2p0"/>
-                                        <constraint firstItem="28g-fW-tvW" firstAttribute="height" secondItem="1Pj-WJ-SW0" secondAttribute="height" multiplier="0.8" id="eiE-Ym-JiT"/>
                                         <constraint firstItem="Qqv-Kd-90U" firstAttribute="leading" secondItem="28g-fW-tvW" secondAttribute="trailing" constant="8" symbolic="YES" id="nby-am-Lke"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -283,14 +283,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1o2-QX-TvZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2064" y="1411"/>
+            <point key="canvasLocation" x="2063.7209302325582" y="1410.5150214592275"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dyP-7v-mdj">
             <objects>
                 <navigationController id="Byv-1d-Q9Z" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fh3-NZ-fIc">
-                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
