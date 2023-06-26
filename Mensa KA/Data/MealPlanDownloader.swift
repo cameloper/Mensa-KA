@@ -128,7 +128,7 @@ class MealPlanDownloader {
         let dataSections = element.children()
         
         let iconSection = dataSections[0]
-        if let icon = try iconSection.getElementsByTag("img").first() {
+        for icon in try iconSection.getElementsByTag("img") {
             let src = try icon.attr("src")
             let extensionIndex = src.index(src.endIndex, offsetBy: -4)
             let iconName = src.split(separator: "/").last![..<extensionIndex]

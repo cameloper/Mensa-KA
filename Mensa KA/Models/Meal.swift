@@ -17,13 +17,13 @@ class Meal: Codable {
         var description: String {
             switch self {
             case .student:
-                return "Student"
+                return "Studierende"
             case .guest:
-                return "Guest"
+                return "Gast"
             case .employee:
-                return "Employee"
+                return "Mitarbeiter"
             case .pupil:
-                return "Pupil"
+                return "Schüler*in"
             }
         }
         
@@ -56,13 +56,6 @@ class Meal: Codable {
     }
     
     var imageName: String? {
-        self.tags.first {
-            switch $0.category {
-            case .optional:
-                return true
-            default:
-                return false
-            }
-        }?.rawValue
+        self.tags.tags(withCategory: .optional).first?.imageName
     }
 }

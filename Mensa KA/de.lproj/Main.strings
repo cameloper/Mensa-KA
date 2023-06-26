@@ -1,0 +1,45 @@
+
+/* Class = "UILabel"; text = "kann beim übermäßigen Verzehr abführend wirken"; ObjectID = "1An-6R-AQ2"; */
+"1An-6R-AQ2.text" = "kann beim übermäßigen Verzehr abführend wirken";
+
+/* Class = "UILabel"; text = "Schweinebauch mit irgendwas"; ObjectID = "7N2-N1-QGs"; */
+"7N2-N1-QGs.text" = "Schweinebauch mit irgendwas";
+
+/* Class = "UILabel"; text = "Mensa:"; ObjectID = "Eyy-9U-s3B"; */
+"Eyy-9U-s3B.text" = "Mensa:";
+
+/* Class = "UINavigationItem"; title = "Mensa Name"; ObjectID = "P7T-x2-v77"; */
+"P7T-x2-v77.title" = "Mensa Name";
+
+/* Class = "UILabel"; text = "enthält regionales Schweinefleisch aus artgerechter Tierhaltung"; ObjectID = "Qqv-Kd-90U"; */
+"Qqv-Kd-90U.text" = "enthält regionales Schweinefleisch aus artgerechter Tierhaltung";
+
+/* Class = "UIViewController"; title = "SettingsViewController"; ObjectID = "T50-BP-4Ut"; */
+"T50-BP-4Ut.title" = "SettingsViewController";
+
+/* Class = "UIButton"; configuration.title = "Fertig"; ObjectID = "bWG-VH-ffF"; */
+"bWG-VH-ffF.configuration.title" = "Fertig";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bWG-VH-ffF"; */
+"bWG-VH-ffF.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "99,99 €"; ObjectID = "fPX-PJ-G2l"; */
+"fPX-PJ-G2l.text" = "99,99 €";
+
+/* Class = "UILabel"; text = "Queenslandnüsse / Macadamianüsse"; ObjectID = "juE-1s-mNe"; */
+"juE-1s-mNe.text" = "Queenslandnüsse / Macadamianüsse";
+
+/* Class = "UIBarButtonItem"; title = "Settings"; ObjectID = "lYq-z0-6TU"; */
+"lYq-z0-6TU.title" = "Settings";
+
+/* Class = "UILabel"; text = "Preiskategorie:"; ObjectID = "lz8-P5-eli"; */
+"lz8-P5-eli.text" = "Preiskategorie:";
+
+/* Class = "UILabel"; text = "Datum:"; ObjectID = "o1J-mT-PZ0"; */
+"o1J-mT-PZ0.text" = "Datum:";
+
+/* Class = "UISegmentedControl"; y3E-Gq-bUZ.segmentTitles[0] = "First"; ObjectID = "y3E-Gq-bUZ"; */
+"y3E-Gq-bUZ.segmentTitles[0]" = "First";
+
+/* Class = "UISegmentedControl"; y3E-Gq-bUZ.segmentTitles[1] = "Second"; ObjectID = "y3E-Gq-bUZ"; */
+"y3E-Gq-bUZ.segmentTitles[1]" = "Second";
