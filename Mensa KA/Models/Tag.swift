@@ -27,7 +27,7 @@ enum Tag: String, Codable {
     case phenylalanine = "11"
     case potAlcohol = "12"
     case assembledMeat = "14"
-    case cocoaGlaze = "15"
+    case cacaoGlazing = "15"
     case assembledFish = "27"
     
     case beef = "rindfleisch"
@@ -54,7 +54,7 @@ enum Tag: String, Codable {
     case lupin = "Lu"
     case almonds = "Ma"
     case lactose = "ML"
-    case nuts = "Pa"
+    case brazilianNuts = "Pa"
     case pecans = "Pe"
     case pistachios = "Pi"
     case macadamiaNuts = "Qu"
@@ -83,7 +83,7 @@ enum Tag: String, Codable {
                 .phenylalanine,
                 .potAlcohol,
                 .assembledMeat,
-                .cocoaGlaze,
+                .cacaoGlazing,
                 .assembledFish:
             return .additive
         case .beef,
@@ -110,7 +110,7 @@ enum Tag: String, Codable {
                 .lupin,
                 .almonds,
                 .lactose,
-                .nuts,
+                .brazilianNuts,
                 .pecans,
                 .pistachios,
                 .macadamiaNuts,
@@ -125,6 +125,67 @@ enum Tag: String, Codable {
                 .molluscs:
             return .allergen
         }
+    }
+    
+    var description: String {
+        let descriptions: [Tag: String] = [
+            // Allergens
+            .cashews: "Cashewnüsse",
+            .speltAndSpeltGluten: "Dinkel und Gluten aus Dinkel",
+            .eggs: "Eier",
+            .peanuts: "Erdnüsse",
+            .fish: "Fisch",
+            .barleyAndBarleyGluten: "Gerste und Gluten aus Gerste",
+            .oatAndOatGluten: "Hafer und Gluten aus Hafer",
+            .hazelnuts: "Hazelnüsse",
+            .kamutAndKamutGluten: "Kamut und Gluten aus Kamut",
+            .crustaceans: "Krebstiere",
+            .lupin: "Lupine",
+            .almonds: "Mandeln",
+            .lactose: "Milch / Laktose",
+            .brazilianNuts: "Paranüsse",
+            .pecans: "Pekannüsse",
+            .pistachios: "Pistazie",
+            .macadamiaNuts: "Queenslandnüsse / Macadamianüsse",
+            .ryeAndRyeGluten: "Roggen und Gluten aus Roggen",
+            .sesame: "Sesam",
+            .celery: "Sellerie",
+            .sulphite: "Schwefeldioxid / Sulfit",
+            .mustard: "Senf",
+            .soya: "Soja",
+            .walnuts: "Walnüsse",
+            .wheatAndWheatGluten: "Weizen und Gluten aus Weizen",
+            .molluscs: "Weichtiere",
+            // Additives
+            .colorant: "mit Farbstoff",
+            .preservant: "mit Konservierungsstoff",
+            .antioxidant: "mit Antioxidationsmittel",
+            .flavorEnhancer: "mit Geschmacksverstärker",
+            .phosphate: "mit Phosphat",
+            .surfaceWaxed: "Oberfläche gewachst",
+            .sulphur: "geschwefelt",
+            .blackenedOlives: "Oliven geschwärzt",
+            .sweetener: "mit Süßungsmitteln",
+            .potLaxative: "kann bei übermäßigem Verzehr abführend wirken",
+            .phenylalanine: "enthält eine Phenylalaninquelle",
+            .potAlcohol: "kann Restalkohol enthalten",
+            .assembledMeat: "aus Fleischstücken zusammengefügt",
+            .cacaoGlazing: "mit kakaohaltiger Fettglausur",
+            .assembledFish: "aus Fischstücken zusammengefügt",
+            // Optional indications
+            .beef: "enthält Rindfleisch",
+            .organicBeef: "enthält regionales Rindfleisch aus artgerechter Tierhaltung",
+            .pork: "enthält Schweinefleisch",
+            .organicPork: "enthält regionales Schweinefleisch aus artgerechter Tierhaltung",
+            .vegetarian: "vegetarisches Gericht",
+            .vegan: "veganes Gericht",
+            .msc: "MSC aus zertifizierter Fischerei",
+            .mensaVital: "MensaVital",
+            .animalRennet: "mit tierischem Lab",
+            .gelatine: "mit Gelatine"
+        ]
+        
+        return descriptions[self] ?? self.rawValue
     }
 
 }
