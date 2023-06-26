@@ -6,13 +6,27 @@
 //
 
 import Foundation
-import UIKit
 
 enum Tag: String, Codable {
     enum Category {
         case additive
         case allergen
         case optional
+        
+        var description: String {
+            switch self {
+            case .additive:
+                return "Zusatzstoffe"
+            case .allergen:
+                return "Allergene"
+            case .optional:
+                return "Freiwillige Angaben"
+            }
+        }
+        
+        static var all: [Category] {
+            return [.optional, .additive, .allergen]
+        }
     }
     
     case colorant = "1"
@@ -189,8 +203,18 @@ enum Tag: String, Codable {
         return descriptions[self] ?? self.rawValue
     }
     
-    var image: UIImage? {
-        return UIImage(named: rawValue)
+    var imageName: String? {
+        return rawValue
     }
 
+}
+
+extension Array where Element == Tag {
+    func tags(withCategory category: Tag.Category) -> [Tag] {
+        return self.filter { $0.category == category }
+    }
+    
+    var presentCategories: [Tag.Category] {
+        return Tag.Category.all.filter { !tags(withCategory: $0).isEmpty }
+    }
 }

@@ -12,7 +12,14 @@ class TagTableViewCell: UITableViewCell {
     @IBOutlet weak var tagLabel: UILabel!
     
     func setup(withTag tag: Tag) {
-        tagImageView.image = tag.image
+        if let imageName = tag.imageName,
+            let image = UIImage(named: imageName){
+            tagImageView.image = image
+            tagImageView.isHidden = false
+        } else {
+            tagImageView.isHidden = true
+        }
+        
         tagLabel.text = tag.description
     }
 

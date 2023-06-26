@@ -58,12 +58,10 @@ class MealPlanTableViewController: UITableViewController, SettingsDelegate {
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return dayPlan?.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return dayPlan?[section].meals.count ?? 0
     }
 
@@ -86,6 +84,12 @@ class MealPlanTableViewController: UITableViewController, SettingsDelegate {
         if segue.identifier == "mealPlanToSettingsSegue",
            let settingsVc = segue.destination as? SettingsViewController {
             settingsVc.setup(lastSelectedMensa: mensa, lastSelectedDate: date, lastSelectedPriceCategory: priceCategory, delegate: self)
+        } else if segue.identifier == "mealPlanToMealDetailsSegue",
+                  let mealDetailsVc = segue.destination as? MealDetailsTableViewController,
+                  let selectedCellIndex = tableView.indexPathForSelectedRow,
+                  let selectedMeal = dayPlan?[selectedCellIndex.section].meals[selectedCellIndex.row] {
+            mealDetailsVc.setup(withMeal: selectedMeal)
+            tableView.deselectRow(at: selectedCellIndex, animated: true)
         }
     }
     

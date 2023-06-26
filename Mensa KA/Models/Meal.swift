@@ -56,13 +56,6 @@ class Meal: Codable {
     }
     
     var imageName: String? {
-        self.tags.first {
-            switch $0.category {
-            case .optional:
-                return true
-            default:
-                return false
-            }
-        }?.rawValue
+        self.tags.tags(withCategory: .optional).first?.imageName
     }
 }
