@@ -111,6 +111,14 @@ class MealPlanDownloader {
             let mealClassName = try mealElement.className()
             log.debug("Parsing meal with class \(mealClassName)")
             if let meal = try parseMeal(mealElement) {
+                if let mealDetailsElement = try mealElement.nextElementSibling(),
+                   let nutritionFactsRowElement = try mealDetailsElement.getElementsByClass("nutrition_facts_row").first() {
+                    log.debug("Found nutrition facts row for meal \(mealClassName), trying to parse.")
+                    if let nutritionFacts = try parseNutritionFacts(nutritionFactsRowElement, mealClassName) {
+                        meal.nutritionalFacts = nutritionFacts
+                    }
+                }
+                
                 meals.append(meal)
             } else {
                 log.error("Could not parse element for meal with class \(mealClassName)")
@@ -172,5 +180,23 @@ class MealPlanDownloader {
         }
         
         return Meal(name: name, tags: tags, prices: prices, envScore: envScore)
+    }
+    
+    func parseNutritionFacts(_ element: Element, _ mealClassName: String) throws -> NutritionFacts? {
+        var nutritionValues = NutritionValues()
+        
+        for nutritionType in NutritionFacts.NutritionValueType.all {
+            if let typeDiv = try element.getElementsByClass(nutritionType.rawValue).first(),
+               let valueDiv = typeDiv.children().last(),
+               valueDiv.hasText() {
+                let valueDivString = try valueDiv.text()
+                if let valueString = valueDivString.split(separator: " ").first,
+                   let value = String(valueString).doubleValue {
+                    nutritionValues[nutritionType] = value
+                }
+            }
+        }
+        
+        return NutritionFacts(nutritionValues: nutritionValues)
     }
 }
