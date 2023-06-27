@@ -28,6 +28,7 @@
 		70ACD5112A49C9EA009FDB4B /* TagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ACD5102A49C9EA009FDB4B /* TagTableViewCell.swift */; };
 		70ACD5132A49CA61009FDB4B /* MealDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ACD5122A49CA61009FDB4B /* MealDetailsTableViewController.swift */; };
 		70ACD5152A4A8D2B009FDB4B /* NutritionFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ACD5142A4A8D2B009FDB4B /* NutritionFacts.swift */; };
+		70ACD5172A4A9998009FDB4B /* NutritionValueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ACD5162A4A9998009FDB4B /* NutritionValueTableViewCell.swift */; };
 		70F758332A4200AB002B5CBE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F758322A4200AB002B5CBE /* SettingsViewController.swift */; };
 		70F758352A421119002B5CBE /* MealPlanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F758342A421119002B5CBE /* MealPlanManager.swift */; };
 		70F758372A421917002B5CBE /* MealPlanError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F758362A421917002B5CBE /* MealPlanError.swift */; };
@@ -78,6 +79,7 @@
 		70ACD5102A49C9EA009FDB4B /* TagTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTableViewCell.swift; sourceTree = "<group>"; };
 		70ACD5122A49CA61009FDB4B /* MealDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailsTableViewController.swift; sourceTree = "<group>"; };
 		70ACD5142A4A8D2B009FDB4B /* NutritionFacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionFacts.swift; sourceTree = "<group>"; };
+		70ACD5162A4A9998009FDB4B /* NutritionValueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionValueTableViewCell.swift; sourceTree = "<group>"; };
 		70F758322A4200AB002B5CBE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		70F758342A421119002B5CBE /* MealPlanManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanManager.swift; sourceTree = "<group>"; };
 		70F758362A421917002B5CBE /* MealPlanError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanError.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			children = (
 				7071FE5A2A417F3D001C524D /* MealTableViewCell.swift */,
 				70ACD5102A49C9EA009FDB4B /* TagTableViewCell.swift */,
+				70ACD5162A4A9998009FDB4B /* NutritionValueTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				7071FE4F2A417A5F001C524D /* Tag.swift in Sources */,
 				7071FE552A417A98001C524D /* MealPlanDownloader.swift in Sources */,
 				7071FE4E2A417A5F001C524D /* Mensa.swift in Sources */,
+				70ACD5172A4A9998009FDB4B /* NutritionValueTableViewCell.swift in Sources */,
 				7071FE4B2A417A5F001C524D /* CWPlan.swift in Sources */,
 				7071FE122A417A0F001C524D /* AppDelegate.swift in Sources */,
 				7071FE142A417A0F001C524D /* SceneDelegate.swift in Sources */,

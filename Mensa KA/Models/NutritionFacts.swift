@@ -18,10 +18,50 @@ struct NutritionFacts: Codable {
         case saturatedFat = "gesaettigt"
         case salt = "salz"
         
+        var description: String {
+            switch self {
+            case .energy:
+                return "🔥 Energie"
+            case .protein:
+                return "💪🏻 Proteine"
+            case .carbonhydrate:
+                return "🌾 Kohlenhydrate"
+            case .sugar:
+                return " - davon Zucker"
+            case .fat:
+                return "🧈 Fett"
+            case .saturatedFat:
+                return " - davon gesättigt"
+            case .salt:
+                return "🧂 Salz"
+            }
+        }
+        
+        var unit: String {
+            switch self {
+            case .energy:
+                return "kCal"
+            default:
+                return "g"
+            }
+        }
+        
         static var all: [NutritionValueType] {
             return [.energy, .protein, .carbonhydrate, .sugar, .fat, .saturatedFat, .salt]
         }
     }
     
-    var nutritionValues = NutritionValues()
+    var nutritionValues: NutritionValues
+}
+
+extension NutritionValues {
+    var arrayInViewOrder: [(key: NutritionFacts.NutritionValueType, value: Double)] {
+        NutritionFacts.NutritionValueType.all.compactMap { type in
+            if let value = self[type] {
+                return (type, value)
+            } else {
+                return nil
+            }
+        }
+    }
 }

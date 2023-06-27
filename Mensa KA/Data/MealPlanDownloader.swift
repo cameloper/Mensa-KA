@@ -183,27 +183,20 @@ class MealPlanDownloader {
     }
     
     func parseNutritionFacts(_ element: Element, _ mealClassName: String) throws -> NutritionFacts? {
-        var nutritionFacts = NutritionFacts()
+        var nutritionValues = NutritionValues()
         
-        if let nutritionTable = try element.getElementsByClass("nutrition_facts").first() {
-            log.debug("Found nutrition table for meal \(mealClassName)")
-            var nutritionValues = NutritionValues()
-            
-            for nutritionType in NutritionFacts.NutritionValueType.all {
-                if let typeDiv = try element.getElementsByClass(nutritionType.rawValue).first(),
-                   let valueDiv = typeDiv.children().last(),
-                   valueDiv.hasText() {
-                    let valueDivString = try valueDiv.text()
-                    if let valueString = valueDivString.split(separator: " ").first,
-                       let value = String(valueString).doubleValue {
-                        nutritionValues[nutritionType] = value
-                    }
+        for nutritionType in NutritionFacts.NutritionValueType.all {
+            if let typeDiv = try element.getElementsByClass(nutritionType.rawValue).first(),
+               let valueDiv = typeDiv.children().last(),
+               valueDiv.hasText() {
+                let valueDivString = try valueDiv.text()
+                if let valueString = valueDivString.split(separator: " ").first,
+                   let value = String(valueString).doubleValue {
+                    nutritionValues[nutritionType] = value
                 }
             }
-            
-            nutritionFacts.nutritionValues = nutritionValues
         }
         
-        return nutritionFacts
+        return NutritionFacts(nutritionValues: nutritionValues)
     }
 }
