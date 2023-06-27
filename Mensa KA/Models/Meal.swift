@@ -47,6 +47,7 @@ class Meal: Codable {
     let tags: [Tag]
     let prices: [PriceCategory: Double]
     let envScore: EnvScore?
+    var nutritionalFacts: NutritionFacts? = nil
     
     init(name: String, tags: [Tag], prices: [PriceCategory : Double], envScore: EnvScore?) {
         self.name = name
