@@ -37,6 +37,7 @@ class MealPlanManager {
             return
         }
         
+        log.info("Downloading meal plan for \(mensa) and CW\(calendarWeek).")
         let mealPlanDownloader = MealPlanDownloader(forMensa: mensa, forCalendarWeek: calendarWeek)
         mealPlanDownloader.getCWPlan { data, error in
             if let cwPlan = data {

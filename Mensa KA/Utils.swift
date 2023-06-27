@@ -81,21 +81,21 @@ struct Log {
         }
     }
     
-    func debug(file: String = #file, line: Int = #line, function: String = #function, _ items: Any...) {
-        log(level: .debug, file: file, line: line, function: function, items)
+    func debug(_ message: @autoclosure () -> Any, file: String = #file, line: Int = #line, function: String = #function) {
+        log(message(), level: .debug, file: file, line: line, function: function)
     }
     
-    func error(file: String = #file, line: Int = #line, function: String = #function, _ items: Any...) {
-        log(level: .error, file: file, line: line, function: function, items)
+    func error(_ message: @autoclosure () -> Any, file: String = #file, line: Int = #line, function: String = #function) {
+        log(message(), level: .error, file: file, line: line, function: function)
     }
     
-    func info(file: String = #file, line: Int = #line, function: String = #function, _ items: Any...) {
-        log(level: .info, file: file, line: line, function: function, items)
+    func info(_ message: @autoclosure () -> Any, file: String = #file, line: Int = #line, function: String = #function) {
+        log(message(), level: .info, file: file, line: line, function: function)
     }
     
-    private func log(level: Level, file: String, line: Int, function: String, _ items: Any...) {
+    private func log(_ message: @autoclosure () -> Any, level: Level, file: String, line: Int, function: String) {
         let fileName = file.split(separator: "/").last!
-        print("\(level.prefix) [\(fileName):\(line) \(function)] \(items)")
+        print("\(level.prefix) [\(fileName):\(line) \(function)] \(message())")
     }
 }
 
