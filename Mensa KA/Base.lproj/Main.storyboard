@@ -224,14 +224,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="40"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-davon gesättigt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24j-F4-GB7">
-                                            <rect key="frame" x="20" y="9.6666666666666643" width="126" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-davon gesättigt" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24j-F4-GB7">
+                                            <rect key="frame" x="20.000000000000014" y="8" width="254.33333333333337" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999 kcal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jq3-UK-vhI">
-                                            <rect key="frame" x="293" y="9.6666666666666643" width="77" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999.99 kJ" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jq3-UK-vhI">
+                                            <rect key="frame" x="282.33333333333331" y="8" width="87.666666666666686" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -239,9 +239,15 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="24j-F4-GB7" firstAttribute="leading" secondItem="7JZ-y9-TDh" secondAttribute="leadingMargin" id="3XJ-Wb-c7n"/>
+                                        <constraint firstAttribute="bottom" secondItem="24j-F4-GB7" secondAttribute="bottom" constant="8" id="3nG-Og-WvK"/>
+                                        <constraint firstItem="Jq3-UK-vhI" firstAttribute="leading" secondItem="24j-F4-GB7" secondAttribute="trailing" constant="8" id="JWx-Pp-GCP"/>
                                         <constraint firstItem="24j-F4-GB7" firstAttribute="centerY" secondItem="7JZ-y9-TDh" secondAttribute="centerY" id="Q0o-Wj-5rh"/>
+                                        <constraint firstItem="Jq3-UK-vhI" firstAttribute="width" secondItem="7JZ-y9-TDh" secondAttribute="width" multiplier="0.224786" id="XwV-yc-bv7"/>
+                                        <constraint firstAttribute="bottom" secondItem="Jq3-UK-vhI" secondAttribute="bottom" constant="8" id="Xy5-aY-Ibq"/>
+                                        <constraint firstItem="24j-F4-GB7" firstAttribute="top" secondItem="7JZ-y9-TDh" secondAttribute="top" constant="8" id="YNq-gZ-S4A"/>
                                         <constraint firstItem="Jq3-UK-vhI" firstAttribute="centerY" secondItem="7JZ-y9-TDh" secondAttribute="centerY" id="ZIf-W6-ccU"/>
                                         <constraint firstItem="Jq3-UK-vhI" firstAttribute="trailing" secondItem="7JZ-y9-TDh" secondAttribute="trailingMargin" id="dXF-Se-UMW"/>
+                                        <constraint firstItem="Jq3-UK-vhI" firstAttribute="top" secondItem="7JZ-y9-TDh" secondAttribute="top" constant="8" id="stI-e7-BcS"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

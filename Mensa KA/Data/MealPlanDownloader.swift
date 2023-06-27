@@ -200,3 +200,11 @@ class MealPlanDownloader {
         return NutritionFacts(nutritionValues: nutritionValues)
     }
 }
+
+extension String {
+    static fileprivate let numberFormatter = NumberFormatter()
+    fileprivate var doubleValue: Double? {
+        String.numberFormatter.decimalSeparator = ","
+        return String.numberFormatter.number(from: self)?.doubleValue
+    }
+}

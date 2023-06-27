@@ -70,14 +70,6 @@ extension Date {
     }
 }
 
-extension String {
-    static private let numberFormatter = NumberFormatter()
-    var doubleValue: Double? {
-        String.numberFormatter.decimalSeparator = ","
-        return String.numberFormatter.number(from: self)?.doubleValue
-    }
-}
-
 struct Log {
     private enum Level: String {
         case debug

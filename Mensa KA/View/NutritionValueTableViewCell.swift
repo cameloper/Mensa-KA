@@ -13,6 +13,15 @@ class NutritionValueTableViewCell: UITableViewCell {
     
     func setup(withType type: NutritionFacts.NutritionValueType, andValue value: Double) {
         nameLabel.text = type.description
-        valueLabel.text = "\(value) \(type.unit)"
+        valueLabel.text = "\(value.description) \(type.unit)"
+    }
+}
+
+extension Double {
+    static fileprivate let numberFormatter = NumberFormatter()
+    fileprivate var description: String {
+        Double.numberFormatter.numberStyle = .decimal
+        Double.numberFormatter.maximumFractionDigits = 2
+        return Double.numberFormatter.string(from: NSNumber(value: self))!
     }
 }

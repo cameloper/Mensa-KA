@@ -40,7 +40,7 @@ struct NutritionFacts: Codable {
         var unit: String {
             switch self {
             case .energy:
-                return "kCal"
+                return "kJ"
             default:
                 return "g"
             }
