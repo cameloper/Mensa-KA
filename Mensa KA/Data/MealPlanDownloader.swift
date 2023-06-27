@@ -43,7 +43,7 @@ class MealPlanDownloader {
                     return
                 }
                 
-                log.info("Parsed meal plan of CW\(self.calendarWeek) with \(dayCount) days.")
+                log.info("Parsed meal plan for mensa \(self.mensa) and CW\(self.calendarWeek) with \(dayCount) days.")
                 completion(cwPlan, error)
             } else if let error = error {
                 log.error(MealPlanError.downloadError(error))
