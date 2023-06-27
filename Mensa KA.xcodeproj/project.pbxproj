@@ -52,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		705CE43F2A4B828000C321BE /* Mensa KA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Mensa KA.entitlements"; sourceTree = "<group>"; };
 		7071FE0E2A417A0F001C524D /* Mensa KA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mensa KA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7071FE112A417A0F001C524D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7071FE132A417A0F001C524D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +136,7 @@
 		7071FE102A417A0F001C524D /* Mensa KA */ = {
 			isa = PBXGroup;
 			children = (
+				705CE43F2A4B828000C321BE /* Mensa KA.entitlements */,
 				70ACD50F2A49C520009FDB4B /* View */,
 				70F758312A420075002B5CBE /* ViewControllers */,
 				7071FE562A417AAB001C524D /* Utils.swift */,
@@ -543,6 +545,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Mensa KA/Mensa KA.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PFNAA7QQ4N;
@@ -572,6 +575,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Mensa KA/Mensa KA.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PFNAA7QQ4N;
