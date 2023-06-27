@@ -189,7 +189,13 @@ class MealPlanDownloader {
             if let typeDiv = try element.getElementsByClass(nutritionType.rawValue).first(),
                let valueDiv = typeDiv.children().last(),
                valueDiv.hasText() {
-                let valueDivString = try valueDiv.text()
+                var valueDivString = try valueDiv.text()
+                
+                if nutritionType == .energy,
+                    let energyValueDivString = valueDivString.split(separator: "/").last {
+                    valueDivString = String(energyValueDivString)
+                }
+                
                 if let valueString = valueDivString.split(separator: " ").first,
                    let value = String(valueString).doubleValue {
                     nutritionValues[nutritionType] = value
