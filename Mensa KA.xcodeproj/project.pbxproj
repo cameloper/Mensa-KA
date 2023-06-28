@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		705CE4412A4BA54300C321BE /* HealthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705CE4402A4BA54300C321BE /* HealthTableViewCell.swift */; };
 		7071FE122A417A0F001C524D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE112A417A0F001C524D /* AppDelegate.swift */; };
 		7071FE142A417A0F001C524D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE132A417A0F001C524D /* SceneDelegate.swift */; };
 		7071FE192A417A0F001C524D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7071FE172A417A0F001C524D /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		705CE43F2A4B828000C321BE /* Mensa KA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Mensa KA.entitlements"; sourceTree = "<group>"; };
+		705CE4402A4BA54300C321BE /* HealthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTableViewCell.swift; sourceTree = "<group>"; };
 		7071FE0E2A417A0F001C524D /* Mensa KA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mensa KA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7071FE112A417A0F001C524D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7071FE132A417A0F001C524D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				7071FE5A2A417F3D001C524D /* MealTableViewCell.swift */,
 				70ACD5102A49C9EA009FDB4B /* TagTableViewCell.swift */,
 				70ACD5162A4A9998009FDB4B /* NutritionValueTableViewCell.swift */,
+				705CE4402A4BA54300C321BE /* HealthTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				70ACD5112A49C9EA009FDB4B /* TagTableViewCell.swift in Sources */,
 				7071FE592A417EFE001C524D /* MealPlanTableViewController.swift in Sources */,
 				70F758352A421119002B5CBE /* MealPlanManager.swift in Sources */,
+				705CE4412A4BA54300C321BE /* HealthTableViewCell.swift in Sources */,
 				70F758332A4200AB002B5CBE /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
