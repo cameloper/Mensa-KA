@@ -70,7 +70,7 @@ extension Date {
     }
     
     var isDMKA: Bool {
-        return self.dayId == "2021-02-04"
+        return self.dayId == "2020-09-14"
     }
 }
 
