@@ -13,7 +13,7 @@ class HealthTableViewCell: UITableViewCell {
     
     private var portionCount: Double = 0 {
         didSet {
-            portionLabel.text = String(portionCount)
+            portionLabel.text = portionCount.description
         }
     }
     
@@ -26,5 +26,14 @@ class HealthTableViewCell: UITableViewCell {
     @IBAction func stepperValueChanged(_ sender: Any) {
         let stepper = sender as! UIStepper
         portionCount = stepper.value
+    }
+}
+
+extension Double {
+    static fileprivate let numberFormatter = NumberFormatter()
+    fileprivate var description: String {
+        Double.numberFormatter.numberStyle = .decimal
+        Double.numberFormatter.maximumFractionDigits = 2
+        return Double.numberFormatter.string(from: NSNumber(value: self))!
     }
 }

@@ -71,7 +71,7 @@ class HealthKitAssistant {
                     if !success {
                         log.error(MealPlanError.healthKitSavingError(error))
                     } else {
-                        log.info("Successfuly saved \(hkNutritionValue.type) in HealthKit")
+                        log.debug("Successfuly saved \(hkNutritionValue.type) in HealthKit")
                     }
                 }
             }
@@ -79,7 +79,7 @@ class HealthKitAssistant {
     }
     
     private var mensaStartTimeToday: Date {
-        var dateComponents = DateComponents()
+        var dateComponents = Calendar.current.dateComponents(in: .current, from: Date())
         dateComponents.hour = 11
         dateComponents.minute = 0
         dateComponents.second = 0
@@ -87,7 +87,7 @@ class HealthKitAssistant {
     }
     
     private var mensaEndTimeToday: Date {
-        var dateComponents = DateComponents()
+        var dateComponents = Calendar.current.dateComponents(in: .current, from: Date())
         dateComponents.hour = 14
         dateComponents.minute = 0
         dateComponents.second = 0
