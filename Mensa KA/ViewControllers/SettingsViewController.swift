@@ -72,6 +72,13 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     @IBAction func dateChanged(_ sender: Any) {
+        if datePicker.date.isDMKA {
+            dismiss(animated: false)
+            performSegue(withIdentifier: "dmkaSegue", sender: self)
+            datePicker.date = Date()
+            return
+        }
+        
         lastSelectedDate = datePicker.date
         settingsDelegate?.settings(didChangeDate: datePicker.date)
     }
