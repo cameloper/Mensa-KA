@@ -25,6 +25,7 @@
 		7071FE572A417AAB001C524D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE562A417AAB001C524D /* Utils.swift */; };
 		7071FE592A417EFE001C524D /* MealPlanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE582A417EFE001C524D /* MealPlanTableViewController.swift */; };
 		7071FE5B2A417F3D001C524D /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE5A2A417F3D001C524D /* MealTableViewCell.swift */; };
+		708C07ED2A4F1EC500A17617 /* HealthKitAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708C07EC2A4F1EC500A17617 /* HealthKitAssistant.swift */; };
 		709E06A52A41D7E300081817 /* LinePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709E06A42A41D7E300081817 /* LinePlan.swift */; };
 		70ACD5112A49C9EA009FDB4B /* TagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ACD5102A49C9EA009FDB4B /* TagTableViewCell.swift */; };
 		70ACD5132A49CA61009FDB4B /* MealDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ACD5122A49CA61009FDB4B /* MealDetailsTableViewController.swift */; };
@@ -76,6 +77,7 @@
 		7071FE582A417EFE001C524D /* MealPlanTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanTableViewController.swift; sourceTree = "<group>"; };
 		7071FE5A2A417F3D001C524D /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		70759A262A42394500B6273A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		708C07EC2A4F1EC500A17617 /* HealthKitAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitAssistant.swift; sourceTree = "<group>"; };
 		709E06A42A41D7E300081817 /* LinePlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinePlan.swift; sourceTree = "<group>"; };
 		70ACD50D2A49C1E0009FDB4B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		70ACD50E2A49C1E0009FDB4B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				7071FE532A417A98001C524D /* MealPlanDownloader.swift */,
 				70F758342A421119002B5CBE /* MealPlanManager.swift */,
 				70F758362A421917002B5CBE /* MealPlanError.swift */,
+				708C07EC2A4F1EC500A17617 /* HealthKitAssistant.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				70F758352A421119002B5CBE /* MealPlanManager.swift in Sources */,
 				705CE4412A4BA54300C321BE /* HealthTableViewCell.swift in Sources */,
 				70F758332A4200AB002B5CBE /* SettingsViewController.swift in Sources */,
+				708C07ED2A4F1EC500A17617 /* HealthKitAssistant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +559,7 @@
 				DEVELOPMENT_TEAM = PFNAA7QQ4N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mensa KA/Info.plist";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Dies ist erforderlich, um deine gewünschte Gerichte in die Health App von iOS eintragen zu können.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -585,6 +590,7 @@
 				DEVELOPMENT_TEAM = PFNAA7QQ4N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mensa KA/Info.plist";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Dies ist erforderlich, um deine gewünschte Gerichte in die Health App von iOS eintragen zu können.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

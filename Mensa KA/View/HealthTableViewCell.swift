@@ -11,13 +11,13 @@ class HealthTableViewCell: UITableViewCell {
     @IBOutlet weak var portionLabel: UILabel!
     @IBOutlet weak var innerView: UIView!
     
-    private var portionCount = 0 {
+    private var portionCount: Double = 0 {
         didSet {
             portionLabel.text = String(portionCount)
         }
     }
     
-    var addToHealthClosure: ((Int) -> Void)?
+    var addToHealthClosure: ((Double) -> Void)?
     
     @IBAction func healthButtonDidTouch(_ sender: Any) {
         addToHealthClosure?(portionCount)
@@ -25,6 +25,6 @@ class HealthTableViewCell: UITableViewCell {
     
     @IBAction func stepperValueChanged(_ sender: Any) {
         let stepper = sender as! UIStepper
-        portionCount = Int(stepper.value)
+        portionCount = stepper.value
     }
 }

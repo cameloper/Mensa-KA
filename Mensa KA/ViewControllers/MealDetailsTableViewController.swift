@@ -77,7 +77,9 @@ class MealDetailsTableViewController: UITableViewController {
         }
     }
     
-    private func addToHealth(_ portionCount: Int) {
-        
+    private func addToHealth(_ portionCount: Double) {
+        if let nutritionalFacts = nutritionalFacts {
+            HealthKitAssistant.main.save(nutritionValues: nutritionalFacts.nutritionValues, portions: portionCount)
+        }
     }
 }
