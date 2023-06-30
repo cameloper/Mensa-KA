@@ -125,7 +125,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensa:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyy-9U-s3B">
-                                <rect key="frame" x="16" y="75.333333333333329" width="58" height="20.666666666666671"/>
+                                <rect key="frame" x="16" y="75.666666666666671" width="58" height="20.666666666666671"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -137,24 +137,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="luM-4K-upK">
-                                <rect key="frame" x="82" y="17.000000000000004" width="292" height="34.333333333333343"/>
+                                <rect key="frame" x="82" y="17.333333333333332" width="292" height="34.333333333333343"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <connections>
                                     <action selector="dateChanged:" destination="T50-BP-4Ut" eventType="valueChanged" id="Zhd-c0-JQa"/>
                                 </connections>
                             </datePicker>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stW-IM-Exy">
-                                <rect key="frame" x="0.0" y="104" width="390" height="216"/>
+                                <rect key="frame" x="0.0" y="104.33333333333331" width="390" height="216"/>
                                 <color key="tintColor" name="AccentColor"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preiskategorie:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lz8-P5-eli">
-                                <rect key="frame" x="16.000000000000007" y="328" width="120.66666666666669" height="20"/>
+                                <rect key="frame" x="16.000000000000007" y="328.33333333333331" width="120.66666666666669" height="20"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="y3E-Gq-bUZ">
-                                <rect key="frame" x="16" y="356" width="358" height="32"/>
+                                <rect key="frame" x="16" y="356.33333333333331" width="358" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -165,7 +165,7 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWG-VH-ffF">
-                                <rect key="frame" x="16" y="411" width="358" height="34.333333333333314"/>
+                                <rect key="frame" x="16" y="411.33333333333331" width="358" height="34.333333333333314"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Fertig"/>
@@ -298,31 +298,31 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PI1-MR-XVa">
-                                            <rect key="frame" x="12" y="12" width="366" height="106"/>
+                                            <rect key="frame" x="8" y="8" width="374" height="114"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anzahl Portionen:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxg-zI-2hn">
-                                                    <rect key="frame" x="16" y="16" width="134" height="34"/>
+                                                    <rect key="frame" x="16" y="16" width="134" height="42"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqq-5k-54r">
-                                                    <rect key="frame" x="158" y="17.333333333333336" width="7.6666666666666572" height="31.333333333333336"/>
+                                                    <rect key="frame" x="158" y="17.666666666666668" width="7.6666666666666572" height="38.666666666666657"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="cyt-PW-Yrc">
-                                                    <rect key="frame" x="16" y="58" width="94" height="32"/>
+                                                    <rect key="frame" x="16" y="66" width="94" height="32"/>
                                                     <connections>
                                                         <action selector="stepperValueChanged:" destination="63u-QU-SwK" eventType="valueChanged" id="z4q-r0-vfj"/>
                                                     </connections>
                                                 </stepper>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2k-lt-V6z">
-                                                    <rect key="frame" x="218.66666666666663" y="35.666666666666664" width="131.33333333333337" height="34.999999999999993"/>
+                                                    <rect key="frame" x="226.66666666666663" y="39.666666666666664" width="131.33333333333337" height="34.999999999999993"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="filled" title="Add To Health">
-                                                        <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                                        <color key="baseForegroundColor" name="AccentColor"/>
                                                         <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </buttonConfiguration>
                                                     <connections>
@@ -330,7 +330,7 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemRedColor"/>
+                                            <color key="backgroundColor" name="AccentColor"/>
                                             <constraints>
                                                 <constraint firstItem="cyt-PW-Yrc" firstAttribute="top" secondItem="Xxg-zI-2hn" secondAttribute="bottom" constant="8" symbolic="YES" id="0iH-2S-tIK"/>
                                                 <constraint firstItem="cyt-PW-Yrc" firstAttribute="leading" secondItem="PI1-MR-XVa" secondAttribute="leadingMargin" constant="8" id="Bmg-zk-xov"/>
@@ -346,10 +346,10 @@
                                         </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="PI1-MR-XVa" secondAttribute="trailing" constant="12" id="DrE-JR-fSf"/>
-                                        <constraint firstItem="PI1-MR-XVa" firstAttribute="leading" secondItem="ETQ-9K-pg9" secondAttribute="leading" constant="12" id="SFT-w8-oFa"/>
-                                        <constraint firstAttribute="bottom" secondItem="PI1-MR-XVa" secondAttribute="bottom" constant="12" id="gLR-Qs-MKm"/>
-                                        <constraint firstItem="PI1-MR-XVa" firstAttribute="top" secondItem="ETQ-9K-pg9" secondAttribute="top" constant="12" id="sot-j7-Myn"/>
+                                        <constraint firstAttribute="trailing" secondItem="PI1-MR-XVa" secondAttribute="trailing" constant="8" id="DrE-JR-fSf"/>
+                                        <constraint firstItem="PI1-MR-XVa" firstAttribute="leading" secondItem="ETQ-9K-pg9" secondAttribute="leading" constant="8" id="SFT-w8-oFa"/>
+                                        <constraint firstAttribute="bottom" secondItem="PI1-MR-XVa" secondAttribute="bottom" constant="8" id="gLR-Qs-MKm"/>
+                                        <constraint firstItem="PI1-MR-XVa" firstAttribute="top" secondItem="ETQ-9K-pg9" secondAttribute="top" constant="8" id="sot-j7-Myn"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -396,9 +396,6 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
