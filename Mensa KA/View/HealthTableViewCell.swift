@@ -10,6 +10,7 @@ import UIKit
 class HealthTableViewCell: UITableViewCell {
     @IBOutlet weak var portionLabel: UILabel!
     @IBOutlet weak var innerView: UIView!
+    @IBOutlet weak var stepper: UIStepper!
     
     private var portionCount: Double = 0 {
         didSet {

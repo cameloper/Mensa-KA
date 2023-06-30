@@ -356,6 +356,7 @@
                                 <connections>
                                     <outlet property="innerView" destination="PI1-MR-XVa" id="C7y-Pg-OjL"/>
                                     <outlet property="portionLabel" destination="yqq-5k-54r" id="up9-OC-ZXi"/>
+                                    <outlet property="stepper" destination="cyt-PW-Yrc" id="thi-jj-NW1"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

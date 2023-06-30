@@ -51,6 +51,8 @@ class MealDetailsTableViewController: UITableViewController {
            let cell = tableView.dequeueReusableCell(withIdentifier: "healthCell") as? HealthTableViewCell {
             cell.addToHealthClosure = addToHealth(_:)
             cell.innerView.layer.cornerRadius = cell.frame.height * 0.15
+            cell.stepper.stepValue = 0.5
+            cell.stepper.minimumValue = 0.5
             return cell
         } else if indexPath.section == 1,
            let nutritionalValue = nutritionalFacts?.nutritionValues.arrayInViewOrder[indexPath.row],
