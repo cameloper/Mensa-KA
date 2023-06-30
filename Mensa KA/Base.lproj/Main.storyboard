@@ -203,11 +203,39 @@
                         <outlet property="datePicker" destination="luM-4K-upK" id="RUL-n2-ohw"/>
                         <outlet property="mensaPicker" destination="stW-IM-Exy" id="zID-4o-1Af"/>
                         <outlet property="priceCategoryControl" destination="y3E-Gq-bUZ" id="T8d-3b-xwB"/>
+                        <segue destination="LrU-CK-yZr" kind="presentation" identifier="dmkaSegue" modalPresentationStyle="overFullScreen" modalTransitionStyle="flipHorizontal" id="U36-Gy-fYh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZgG-dy-46t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2065" y="689"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SXC-ii-DiJ">
+            <objects>
+                <viewController id="LrU-CK-yZr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nuf-OI-fIT">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dmka" translatesAutoresizingMaskIntoConstraints="NO" id="NQJ-n9-0JU">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cNs-43-AVj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NQJ-n9-0JU" secondAttribute="trailing" id="2yA-RY-QuZ"/>
+                            <constraint firstAttribute="bottom" secondItem="NQJ-n9-0JU" secondAttribute="bottom" id="Aup-ec-JOZ"/>
+                            <constraint firstItem="NQJ-n9-0JU" firstAttribute="leading" secondItem="nuf-OI-fIT" secondAttribute="leading" id="UNS-LT-qe0"/>
+                            <constraint firstItem="NQJ-n9-0JU" firstAttribute="top" secondItem="nuf-OI-fIT" secondAttribute="top" id="gH9-qb-2f3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ClY-rr-hge"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G7w-ae-4St" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3010.7692307692305" y="688.86255924170609"/>
         </scene>
         <!--Meal Details Table View Controller-->
         <scene sceneID="BNJ-ZD-ost">
@@ -291,6 +319,74 @@
                                     <outlet property="tagLabel" destination="Qqv-Kd-90U" id="9FB-oc-jC8"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="healthCell" rowHeight="130" id="63u-QU-SwK" customClass="HealthTableViewCell" customModule="Mensa_KA" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="140" width="390" height="130"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="63u-QU-SwK" id="ETQ-9K-pg9">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="130"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PI1-MR-XVa">
+                                            <rect key="frame" x="8" y="8" width="374" height="114"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anzahl Portionen:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxg-zI-2hn">
+                                                    <rect key="frame" x="16" y="16" width="134" height="42"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqq-5k-54r">
+                                                    <rect key="frame" x="158" y="17.666666666666668" width="7.6666666666666572" height="38.666666666666657"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="cyt-PW-Yrc">
+                                                    <rect key="frame" x="16" y="66" width="94" height="32"/>
+                                                    <connections>
+                                                        <action selector="stepperValueChanged:" destination="63u-QU-SwK" eventType="valueChanged" id="z4q-r0-vfj"/>
+                                                    </connections>
+                                                </stepper>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2k-lt-V6z">
+                                                    <rect key="frame" x="226.66666666666663" y="39.666666666666664" width="131.33333333333337" height="34.999999999999993"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="filled" title="Add To Health">
+                                                        <color key="baseForegroundColor" name="AccentColor"/>
+                                                        <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="healthButtonDidTouch:" destination="63u-QU-SwK" eventType="touchUpInside" id="Bh1-Jn-KE0"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" name="AccentColor"/>
+                                            <constraints>
+                                                <constraint firstItem="cyt-PW-Yrc" firstAttribute="top" secondItem="Xxg-zI-2hn" secondAttribute="bottom" constant="8" symbolic="YES" id="0iH-2S-tIK"/>
+                                                <constraint firstItem="cyt-PW-Yrc" firstAttribute="leading" secondItem="PI1-MR-XVa" secondAttribute="leadingMargin" constant="8" id="Bmg-zk-xov"/>
+                                                <constraint firstItem="yqq-5k-54r" firstAttribute="leading" secondItem="Xxg-zI-2hn" secondAttribute="trailing" constant="8" symbolic="YES" id="J7C-qH-zZt"/>
+                                                <constraint firstItem="p2k-lt-V6z" firstAttribute="centerY" secondItem="PI1-MR-XVa" secondAttribute="centerY" id="Mfo-I4-C4G"/>
+                                                <constraint firstItem="yqq-5k-54r" firstAttribute="centerY" secondItem="Xxg-zI-2hn" secondAttribute="centerY" id="OMr-1R-yNH"/>
+                                                <constraint firstItem="yqq-5k-54r" firstAttribute="height" secondItem="Xxg-zI-2hn" secondAttribute="height" multiplier="0.913043" id="fPv-yZ-zXk"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="cyt-PW-Yrc" secondAttribute="bottom" constant="8" id="t3U-cT-V92"/>
+                                                <constraint firstItem="p2k-lt-V6z" firstAttribute="trailing" secondItem="PI1-MR-XVa" secondAttribute="trailingMargin" constant="-8" id="uOG-YS-weq"/>
+                                                <constraint firstItem="Xxg-zI-2hn" firstAttribute="leading" secondItem="PI1-MR-XVa" secondAttribute="leadingMargin" constant="8" id="vVf-QZ-ZWy"/>
+                                                <constraint firstItem="Xxg-zI-2hn" firstAttribute="top" secondItem="PI1-MR-XVa" secondAttribute="topMargin" constant="8" id="zA3-Pj-iLX"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="PI1-MR-XVa" secondAttribute="trailing" constant="8" id="DrE-JR-fSf"/>
+                                        <constraint firstItem="PI1-MR-XVa" firstAttribute="leading" secondItem="ETQ-9K-pg9" secondAttribute="leading" constant="8" id="SFT-w8-oFa"/>
+                                        <constraint firstAttribute="bottom" secondItem="PI1-MR-XVa" secondAttribute="bottom" constant="8" id="gLR-Qs-MKm"/>
+                                        <constraint firstItem="PI1-MR-XVa" firstAttribute="top" secondItem="ETQ-9K-pg9" secondAttribute="top" constant="8" id="sot-j7-Myn"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="innerView" destination="PI1-MR-XVa" id="C7y-Pg-OjL"/>
+                                    <outlet property="portionLabel" destination="yqq-5k-54r" id="up9-OC-ZXi"/>
+                                    <outlet property="stepper" destination="cyt-PW-Yrc" id="thi-jj-NW1"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="LED-pv-7Fu" id="W3P-aU-jpy"/>
@@ -321,6 +417,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="dmka" width="1125" height="2436"/>
         <image name="regionales-schweinefleisch" width="31.943181991577148" height="31.977272033691406"/>
         <image name="slider.horizontal.3" catalog="system" width="128" height="99"/>
         <image name="star" catalog="system" width="128" height="116"/>

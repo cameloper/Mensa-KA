@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		705CE4412A4BA54300C321BE /* HealthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705CE4402A4BA54300C321BE /* HealthTableViewCell.swift */; };
 		7071FE122A417A0F001C524D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE112A417A0F001C524D /* AppDelegate.swift */; };
 		7071FE142A417A0F001C524D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE132A417A0F001C524D /* SceneDelegate.swift */; };
 		7071FE192A417A0F001C524D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7071FE172A417A0F001C524D /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		7071FE572A417AAB001C524D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE562A417AAB001C524D /* Utils.swift */; };
 		7071FE592A417EFE001C524D /* MealPlanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE582A417EFE001C524D /* MealPlanTableViewController.swift */; };
 		7071FE5B2A417F3D001C524D /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071FE5A2A417F3D001C524D /* MealTableViewCell.swift */; };
+		708C07ED2A4F1EC500A17617 /* HealthKitAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708C07EC2A4F1EC500A17617 /* HealthKitAssistant.swift */; };
 		709E06A52A41D7E300081817 /* LinePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709E06A42A41D7E300081817 /* LinePlan.swift */; };
 		70ACD5112A49C9EA009FDB4B /* TagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ACD5102A49C9EA009FDB4B /* TagTableViewCell.swift */; };
 		70ACD5132A49CA61009FDB4B /* MealDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ACD5122A49CA61009FDB4B /* MealDetailsTableViewController.swift */; };
@@ -52,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		705CE43F2A4B828000C321BE /* Mensa KA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Mensa KA.entitlements"; sourceTree = "<group>"; };
+		705CE4402A4BA54300C321BE /* HealthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTableViewCell.swift; sourceTree = "<group>"; };
 		7071FE0E2A417A0F001C524D /* Mensa KA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mensa KA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7071FE112A417A0F001C524D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7071FE132A417A0F001C524D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 		7071FE582A417EFE001C524D /* MealPlanTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanTableViewController.swift; sourceTree = "<group>"; };
 		7071FE5A2A417F3D001C524D /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		70759A262A42394500B6273A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		708C07EC2A4F1EC500A17617 /* HealthKitAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitAssistant.swift; sourceTree = "<group>"; };
 		709E06A42A41D7E300081817 /* LinePlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinePlan.swift; sourceTree = "<group>"; };
 		70ACD50D2A49C1E0009FDB4B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		70ACD50E2A49C1E0009FDB4B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -135,6 +140,7 @@
 		7071FE102A417A0F001C524D /* Mensa KA */ = {
 			isa = PBXGroup;
 			children = (
+				705CE43F2A4B828000C321BE /* Mensa KA.entitlements */,
 				70ACD50F2A49C520009FDB4B /* View */,
 				70F758312A420075002B5CBE /* ViewControllers */,
 				7071FE562A417AAB001C524D /* Utils.swift */,
@@ -186,6 +192,7 @@
 				7071FE532A417A98001C524D /* MealPlanDownloader.swift */,
 				70F758342A421119002B5CBE /* MealPlanManager.swift */,
 				70F758362A421917002B5CBE /* MealPlanError.swift */,
+				708C07EC2A4F1EC500A17617 /* HealthKitAssistant.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -196,6 +203,7 @@
 				7071FE5A2A417F3D001C524D /* MealTableViewCell.swift */,
 				70ACD5102A49C9EA009FDB4B /* TagTableViewCell.swift */,
 				70ACD5162A4A9998009FDB4B /* NutritionValueTableViewCell.swift */,
+				705CE4402A4BA54300C321BE /* HealthTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -364,7 +372,9 @@
 				70ACD5112A49C9EA009FDB4B /* TagTableViewCell.swift in Sources */,
 				7071FE592A417EFE001C524D /* MealPlanTableViewController.swift in Sources */,
 				70F758352A421119002B5CBE /* MealPlanManager.swift in Sources */,
+				705CE4412A4BA54300C321BE /* HealthTableViewCell.swift in Sources */,
 				70F758332A4200AB002B5CBE /* SettingsViewController.swift in Sources */,
+				708C07ED2A4F1EC500A17617 /* HealthKitAssistant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,11 +553,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Mensa KA/Mensa KA.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PFNAA7QQ4N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mensa KA/Info.plist";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Dies ist erforderlich, um deine gewünschte Gerichte in die Health App von iOS eintragen zu können.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -572,11 +584,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Mensa KA/Mensa KA.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PFNAA7QQ4N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mensa KA/Info.plist";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Dies ist erforderlich, um deine gewünschte Gerichte in die Health App von iOS eintragen zu können.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

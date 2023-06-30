@@ -68,6 +68,10 @@ extension Date {
         Date.idDateFormatter.dateFormat = "yyyy-MM-dd"
         return Date.idDateFormatter.string(from: self)
     }
+    
+    var isDMKA: Bool {
+        return self.dayId == "2020-09-14"
+    }
 }
 
 struct Log {
