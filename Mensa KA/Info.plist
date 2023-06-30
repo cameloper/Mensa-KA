@@ -23,5 +23,7 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Dies ist erforderlich, um deine gewünschte Gerichte in die Health App von iOS eintragen zu können.</string>
 </dict>
 </plist>
