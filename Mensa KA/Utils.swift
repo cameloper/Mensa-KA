@@ -46,9 +46,10 @@ extension Date {
     ///
     ///  - Returns: `Date` instance of given day and week at noon.
     init(day: Int, in calendarWeek: Int) {
-        var dateComponents = DateComponents()
+        var dateComponents = Calendar.current.dateComponents(Set([.year]), from: Date())
         dateComponents.weekOfYear = (1...52).contains(calendarWeek) ? calendarWeek : 1
         dateComponents.weekday = (1...7).contains(day) ? day : 1
+        dateComponents.hour = 12
         
         self = Calendar.current.date(from: dateComponents)!
     }
