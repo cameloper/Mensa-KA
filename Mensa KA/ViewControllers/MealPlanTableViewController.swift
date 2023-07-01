@@ -9,9 +9,11 @@ import UIKit
 
 class MealPlanTableViewController: UITableViewController, SettingsDelegate {
     @IBOutlet weak var settingsButton: UIBarButtonItem!
+    var segmentedControl = UISegmentedControl()
+    
     var mensa: Mensa = UserDefaults.standard.getMensa()
     var priceCategory: Meal.PriceCategory = UserDefaults.standard.getPriceCategory()
-    var date = Date()
+    var date = Date(day: 2, in: 27) // TODO: For debugging only, do not forget to change back
 
     let mealPlanManager = MealPlanManager()
     var dayPlan: [LinePlan]?
@@ -23,6 +25,7 @@ class MealPlanTableViewController: UITableViewController, SettingsDelegate {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         
         getMealPlan()
+        setupSegmentedControl()
     }
     
     func getMealPlan() {
@@ -73,6 +76,16 @@ class MealPlanTableViewController: UITableViewController, SettingsDelegate {
         cell.setupCell(meal: (dayPlan?[indexPath.section].meals[indexPath.row])!, priceCategory: priceCategory)
 
         return cell
+    }
+    
+    func setupSegmentedControl() {
+        segmentedControl.insertSegment(withTitle: "Mo", at: 0, animated: false)
+        segmentedControl.insertSegment(withTitle: "Di", at: 1, animated: false)
+        segmentedControl.insertSegment(withTitle: "Mi", at: 2, animated: false)
+        segmentedControl.insertSegment(withTitle: "Do", at: 3, animated: false)
+        segmentedControl.insertSegment(withTitle: "Fr", at: 4, animated: false)
+        
+        navigationItem.titleView = segmentedControl
     }
     
     // MARK: - Navigation

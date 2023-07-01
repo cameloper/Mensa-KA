@@ -45,6 +45,8 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         if let lastSelectedPriceCategory = lastSelectedPriceCategory {
             priceCategoryControl.selectedSegmentIndex = lastSelectedPriceCategory.index
         }
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     func setup(lastSelectedMensa: Mensa, lastSelectedDate: Date, lastSelectedPriceCategory: Meal.PriceCategory, delegate: SettingsDelegate) {
