@@ -7,37 +7,6 @@
 
 import Foundation
 
-extension UserDefaults {
-    static private let mensaKey = "userMensa"
-    static private let priceCategoryKey = "priceCategory"
-    
-    func getMensa() -> Mensa {
-        if let value = UserDefaults.standard.string(forKey: UserDefaults.mensaKey),
-            let mensa = Mensa(rawValue: value) {
-            return mensa
-        } else {
-            return .adenauerring
-        }
-    }
-    
-    func setMensa(_ mensa:  Mensa) {
-        UserDefaults.standard.set(mensa.rawValue, forKey: UserDefaults.mensaKey)
-    }
-    
-    func getPriceCategory() -> Meal.PriceCategory {
-        if let value = UserDefaults.standard.string(forKey: UserDefaults.priceCategoryKey),
-           let priceCategory = Meal.PriceCategory(rawValue: value) {
-            return priceCategory
-        } else {
-            return .student
-        }
-    }
-    
-    func setPriceCategory(_ priceCategory: Meal.PriceCategory) {
-        UserDefaults.standard.set(priceCategory.rawValue, forKey: UserDefaults.priceCategoryKey)
-    }
-}
-
 extension Date {
     /// Initializes a `Date` instance of the given day of  week in the given week of year.
     ///  - Parameters:

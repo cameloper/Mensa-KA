@@ -7,13 +7,9 @@
 
 import UIKit
 
-class MealPlanTableViewController: UITableViewController, SettingsDelegate {
-    @IBOutlet weak var settingsButton: UIBarButtonItem!
+class MealPlanTableViewController: UITableViewController {
     var segmentedControl = UISegmentedControl()
-    
-    var mensa: Mensa = UserDefaults.standard.getMensa()
-    var priceCategory: Meal.PriceCategory = UserDefaults.standard.getPriceCategory()
-    var date = Date()
+    var date = Date(day: 2, in: 27)
 
     let mealPlanManager = MealPlanManager()
     var dayPlan: [LinePlan]?
@@ -26,9 +22,12 @@ class MealPlanTableViewController: UITableViewController, SettingsDelegate {
         
         getMealPlan()
         setupSegmentedControl()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(settingsDidChange), name: .settingsDidChange, object: nil)
     }
     
     func getMealPlan() {
+        let mensa = SettingsManager.main.mensa
         navigationItem.title = mensa.shortName
         mealPlanManager.getNonEmptyLinePlans(forMensa: mensa, forDate: date) { dayPlan, error in
             self.dayPlan = dayPlan
@@ -38,20 +37,8 @@ class MealPlanTableViewController: UITableViewController, SettingsDelegate {
         }
     }
 
-    func settings(didChangeMensa mensa: Mensa) {
-        self.mensa = mensa
+    @objc func settingsDidChange() {
         getMealPlan()
-        UserDefaults.standard.setMensa(mensa)
-    }
-    
-    func settings(didChangeDate date: Date) {
-        self.date = date
-        getMealPlan()
-    }
-    
-    func settings(didChangePriceCategory priceCategory: Meal.PriceCategory) {
-        self.priceCategory = priceCategory
-        UserDefaults.standard.setPriceCategory(priceCategory)
         tableView.reloadData()
     }
     
@@ -73,7 +60,7 @@ class MealPlanTableViewController: UITableViewController, SettingsDelegate {
                 return UITableViewCell()
         }
         
-        cell.setupCell(meal: (dayPlan?[indexPath.section].meals[indexPath.row])!, priceCategory: priceCategory)
+        cell.setupCell(meal: (dayPlan?[indexPath.section].meals[indexPath.row])!, priceCategory: SettingsManager.main.priceCategory)
 
         return cell
     }
@@ -94,10 +81,7 @@ class MealPlanTableViewController: UITableViewController, SettingsDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "mealPlanToSettingsSegue",
-           let settingsVc = segue.destination as? SettingsViewController {
-            settingsVc.setup(lastSelectedMensa: mensa, lastSelectedDate: date, lastSelectedPriceCategory: priceCategory, delegate: self)
-        } else if segue.identifier == "mealPlanToMealDetailsSegue",
+        if segue.identifier == "mealPlanToMealDetailsSegue",
                   let mealDetailsVc = segue.destination as? MealDetailsTableViewController,
                   let selectedCellIndex = tableView.indexPathForSelectedRow,
                   let selectedMeal = dayPlan?[selectedCellIndex.section].meals[selectedCellIndex.row] {
