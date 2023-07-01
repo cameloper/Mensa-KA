@@ -13,7 +13,7 @@ class MealPlanTableViewController: UITableViewController, SettingsDelegate {
     
     var mensa: Mensa = UserDefaults.standard.getMensa()
     var priceCategory: Meal.PriceCategory = UserDefaults.standard.getPriceCategory()
-    var date = Date(day: 2, in: 27) // TODO: For debugging only, do not forget to change back
+    var date = Date()
 
     let mealPlanManager = MealPlanManager()
     var dayPlan: [LinePlan]?
