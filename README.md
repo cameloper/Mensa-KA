@@ -1,6 +1,6 @@
 #  Mensa KA
 
-**not properly maintained**
+*not properly maintained*
 
 Even though there are a lot of options to retrieve current meal plans from Karlruher dining halls, none of them are really good.
 The website is not responsive enough, OpenMensa parsers are a pain and the OpenMensa app is also not good anyway.
