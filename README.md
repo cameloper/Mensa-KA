@@ -1,3 +1,5 @@
+> ⚠️ This repository, along my other not-dead projects, was moved to [Codeberg](https://codeberg.org/cameloper/Mensa-KA). Please head over there for the further development.
+
 #  Mensa KA
 
 **not properly maintained**
